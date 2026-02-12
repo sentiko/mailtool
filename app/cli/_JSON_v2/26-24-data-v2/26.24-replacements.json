@@ -2,9 +2,36 @@
     "replacements" : 
     [
         {
-            "HTML"       : "26.24-1.jpg",
-            "FSH"        : "",
-            "DCE"        : ""
-        }
+            "HTML"       : "26.24-1.gif",
+            "FSH"        : "https://image.email-futurosinhumo.com/lib/fe42157175640478741574/m/1/18bd6197-e8f3-4225-b0e7-09195f66d372.gif",
+            "DCE"        : "https://image.e.iqos.com/lib/fe3a15707564067e7d1073/m/1/3216361d-af05-428f-a910-e767662a0050.gif"
+        },
+        {
+            "HTML"       : "26.24-2.jpg",
+            "FSH"        : "https://image.email-futurosinhumo.com/lib/fe42157175640478741574/m/1/f8dca5eb-6db7-458c-af59-4521a17b11a9.jpg",
+            "DCE"        : "https://image.e.iqos.com/lib/fe3a15707564067e7d1073/m/1/5a0ede4e-e9b6-4fc0-aa79-52273d2fa1fd.jpg"
+        },
+        {
+            "HTML"       : "26.24-3.gif",
+            "FSH"        : "https://image.email-futurosinhumo.com/lib/fe42157175640478741574/m/1/3becd8fe-d132-45b4-a9d3-5b6b2a53f738.gif",
+            "DCE"        : "https://image.e.iqos.com/lib/fe3a15707564067e7d1073/m/1/e6083d76-fe26-4d7c-8887-679b6bd80f9e.gif"
+        },
+        {
+            "HTML"       : "26.24-4.gif",
+            "FSH"        : "https://image.email-futurosinhumo.com/lib/fe42157175640478741574/m/1/48dcf093-14de-4e55-b721-e6c190579932.gif",
+            "DCE"        : "https://image.e.iqos.com/lib/fe3a15707564067e7d1073/m/1/7ff7e88e-7238-447c-b566-a7f22643fba7.gif"
+        },
+
+
+
+
+
+            {
+                "HTML"       : "header-iqos-fc.png",
+                "FSH"        : "https://image.email-futurosinhumo.com/lib/fe42157175640478741574/m/1/cbe5cb37-5e0d-4551-abdb-89e10446f856.png",
+                "DCE"        : "https://image.e.iqos.com/lib/fe3a15707564067e7d1073/m/1/d3c9004b-9497-4e61-854e-221f318b836b.png",
+                "THIS"       : "LOGO VACIO, SIN TEXTO A LA DERECHA - FOREVER CURIOUS"
+            }
+
     ]
 }

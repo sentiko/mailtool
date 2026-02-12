@@ -406,6 +406,23 @@ wa
 Hablemos para que 15 millones de fumadores puedan elegir. Hablemos de alternativas para los que fuman. Únete al movimiento. https://futurosinhumo.com.mx 
 https://wa.me/?text=Hablemos%20para%20que%2015%20millones%20de%20fumadores%20puedan%20elegir.%20Hablemos%20de%20alternativas%20para%20los%20que%20fuman.%20%C3%9Anete%20al%20movimiento.%20https%3A%2F%2Ffuturosinhumo.com.mx
 
+
+
+===================================================================
+
+LEADS - SOLICITAR CODIGO UNICO A USUARIO CON IQOS
+
+"donde_codificar_la_siguiente url" : "https://www.urlencoder.org/",
+"url_ctaDECODED"      : "whatsapp://send?text=",
+"txt2Encode_25pc"     : "Hola, ¿me compartes tu código único de IQOS? Quiero obtener el 25% de descuento. Tú puedes ganar $300 MXN en beneficios digitales.",
+"txtEncoded_25pc"     : "Hola%2C%20%C2%BFme%20compartes%20tu%20c%C3%B3digo%20%C3%BAnico%20de%20IQOS%3F%20Quiero%20obtener%20el%2025%25%20de%20descuento.%20T%C3%BA%20puedes%20ganar%20%24300%20MXN%20en%20beneficios%20digitales.",
+"url_SIN_MSG"         : "https://wa.me/?text=",
+"url"                 : "https://wa.me/?text=Hola%2C%20%C2%BFme%20compartes%20tu%20c%C3%B3digo%20%C3%BAnico%20de%20IQOS%3F%20Quiero%20obtener%20el%2025%25%20de%20descuento.%20T%C3%BA%20puedes%20ganar%20%24300%20MXN%20en%20beneficios%20digitales.",
+
+
+
+
+
 ===================================================================
 
 

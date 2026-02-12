@@ -47,7 +47,7 @@ $requiredBlocks = array(
     "iqos24-header-iqos",   // 
     "iqos24-center-img",    // 1    https://together-club.com/
     "iqos24-greeting",      // 
-    "iqos24-center-img",    // 2    Conocer beneficios   https://www.iqos.com/mx/es/programa-lealtad-together-club.html
+    "iqos24-center-img",    // 2    Conocer beneficios  https://www.iqos.com/mx/es/programa-lealtad-together-club.html
     "iqos24-center-img",    // 3                        https://www.iqos.com/mx/es/programa-lealtad-together-club.html
     "iqos24-columns-img-img-img",  //
                             // 4g
