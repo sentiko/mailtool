@@ -277,6 +277,9 @@ v1. version inicial. Derivada de pmi-Brand-World-B01-600-v01.twig
                           {% elseif blocks[index].type ==  "iq24-footer-iqos-fc-disclaimers" -%}
                             {{ block("iq24_footer_iqos_fc_disclaimers"  , "iq24-block-footer-fc-disclaimers.twig") -}}
 
+                          {% elseif blocks[index].type ==  "iq24-footer-iqos-nofc-disclaimers" -%}
+                            {{ block("iq24_footer_iqos_nofc_disclaimers"  , "iq24-block-footer-nofc-disclaimers.twig") -}}
+ 
 
 
                           {% elseif blocks[index].type ==  "iq24-center-img-with-bgimg" -%}

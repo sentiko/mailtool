@@ -80,13 +80,14 @@ $requiredBlocks = array(
 
 
     'iqos24-spacer',
-    "iqos24-footer-iqos-forever-curious",
+    "iq26-footer-iqos",
     ""
 
 );
 
 // MODULOS PARA TEMPLATE iqos-2024-v1.twig
 $requiredBlocks__IQOS = array(
+    "iqos24-footer-iqos-forever-curious",
     "iqos24-header-iqos-DARK",
     "iqos24-footer-iqos-forever-curious-DARK",
 
@@ -159,36 +160,6 @@ $requiredBlocks__ZYN = array(
     "zyn25-legales",
     "zyn25-footer",
     ""
-);
-
-// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [TOGETHER CLUB]
-$requiredBlocks_cz = array(
-    "tc25-header",          // 
-    "iqos24-center-img",    // 
-    'cz25-p700',            // 
-    "iqos24-center-img",    // 
-    "iqos24-center-img",    // 
-    
-    // saludo
-    "cz25-greeting",        // 
-    'cz25-p700',            // 
-    'cz25-p300',            // 
-
-    "iqos24-center-img",    // 
-    'iqos24-columns',       // 
-        
-    "iqos24-center-img",    // 
-    'cz25-p300',            // 
-    'cz25-p700',            // 
-
-    "tc25-textbox-black",
-    "tc25-textbox-grey",
-    "tc25-textbox-gray-listbox-cta",
-
-
-    "tc25-dudas-contactanos",
-    "tc25-siguenos-rs-2",
-    "tc25-footer"
 );
 
 

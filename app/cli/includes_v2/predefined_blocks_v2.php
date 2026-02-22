@@ -2536,11 +2536,52 @@ $libraryBlocks['iqos24-Tu-Equipo-IQOS'] ='
             "txt"           : "Tu Equipo IQOS",
             "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d "
         },';
+
+                
+$libraryBlocks['iq26-footer-iqos'] ='
+
+
+        {   "SECCION"       :  " FOOTER IQOS 2026" },
+        {                        
+            "type"          :  "iq24-footer-iqos-nofc-disclaimers",
+            "txt"           :  "",
+            "darkmode_img"  :  "0",
+            "color"         :  "#34303d",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "this_TXT"      :  "{LEGALES DE ESTA PIEZA}",
+            "DTI":
+            {
+                "showIluma"  :  "0",
+                "txtIluma"   :  "IQOS ILUMA<sup>&trade;</sup> está diseñado para usarse únicamente con unidades de tabaco<br>SMARTCORE STICKS<sup>&trade;</sup>.<br><br>No utilice IQOS ILUMA<sup>&trade;</sup> y unidades de tabaco SMARTCORE STICKS<sup>&trade;</sup> con generaciones anteriores de IQOS<sup>&trade;</sup>, ya que esto puede causar daños a su dispositivo.<br><br>Más información en <a href=\"https://www.iqos.com/\" style=\"text-decoration:underline;\" target=\"_blank\">www.iqos.com</a>.",
+                "txtRisk"    :  "Este producto no es libre de riesgo, contiene nicotina<br> la cual es adictiva. Solo para adultos.",
+                "txtInfo"    :  "Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
+                "txtPrivacy" :  "Consulta nuestro aviso de privacidad con base en el cual son tratados tus datos personales <a href=\"https://www.pmiprivacy.com/es-la/consumer\" alias=\"footer_pmi_privacy\" style=\"text-decoration:underline;\" target=\"_blank\">aquí</a>.",
+                "THIS"       :  "{LEGALES [ILUMA], Duty To Inform}"
+            },
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-footer-iqos-fc-links",
+            "darkmode_img"  :  "0",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-footer-iqos-fc-address",
+            "color"         :  "#34303d",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "version"       :  "iqos-2024-v1.twig"
+        }';
+
+
 $libraryBlocks['iqos24-footer-iqos-forever-curious'] ='
 
 
         {   "SECCION"       :  " FOOTER Forever Curious" },
-        {
+        {                        
             "type"          :  "iq24-footer-iqos-fc-disclaimers",
             "txt"           :  "",
             "darkmode_img"  :  "0",
