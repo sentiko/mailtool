@@ -44,43 +44,30 @@ switch ( (string)$companyBrand ){
 
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
+    "iqos24-center-img",    // 1g   https://conoce-iqos.com/wp-content/localizador-tiendas.html
     "iqos24-greeting",      // 
-    
     "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
-
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
+    "iqos24-center-img",    // 3    Encontrar mi IQOS ILUMA i  https://conoce-iqos.com/wp-content/localizador-tiendas.html
+    "iqos24-center-img",    // 4g   Encontrar mi sabor         https://conoce-iqos.com/wp-content/localizador-tiendas.html
+    "iqos24-center-img",    // 5g   Quiero probarlo            https://conoce-iqos.com/wp-content/localizador-tiendas.html
 
 
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
+// MG HEADER                  https://conoce-iqos.com/wp-content/localizador-tiendas.html
+// Encontrar mi IQOS ILUMA i  https://conoce-iqos.com/wp-content/localizador-tiendas.html
+// Encontrar mi sabor         https://conoce-iqos.com/wp-content/localizador-tiendas.html
+// Quiero probarlo            https://conoce-iqos.com/wp-content/localizador-tiendas.html
 
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
+// Localiza una tienda        https://conoce-iqos.com/wp-content/localizador-tiendas.html
+// Email                      contact.mx@iqos.com
+// Contáctanos                8001 476769
+// Facebook                   https://www.facebook.com/iqosmx
+// Instagram                  https://www.instagram.com/iqos_mx/
+	
 
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
 
 
     'iqos24-spacer',
-    "iqos24-footer-iqos-forever-curious",
+    "iq26-footer-iqos",
     ""
 
 );
@@ -140,56 +127,7 @@ $requiredBlocks__IQOS = array(
 
     ""
 );
-// MODULOS PARA TEMPLATE zyn-2025-v1.twig
-$requiredBlocks__ZYN = array(
-    "zyn25-header-zyn",     
-    "iqos24-center-img",    // 1
-    "zyn25-greeting",       // 
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
 
-    "zyn25-zyn-siguenos-ig",   // zyn-siguenos-ig.jpg
-    "zyn25-zyn-find-your-zyn", // zyn-find-your-zyn.jpg
-    "iqos24-columns",       // #, XX , #  (21%, 58%, 21%)
-
-    "iqos24-spacer",
-    "zyn25-legales",
-    "zyn25-footer",
-    ""
-);
-
-// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [TOGETHER CLUB]
-$requiredBlocks_cz = array(
-    "tc25-header",          // 
-    "iqos24-center-img",    // 
-    'cz25-p700',            // 
-    "iqos24-center-img",    // 
-    "iqos24-center-img",    // 
-    
-    // saludo
-    "cz25-greeting",        // 
-    'cz25-p700',            // 
-    'cz25-p300',            // 
-
-    "iqos24-center-img",    // 
-    'iqos24-columns',       // 
-        
-    "iqos24-center-img",    // 
-    'cz25-p300',            // 
-    'cz25-p700',            // 
-
-    "tc25-textbox-black",
-    "tc25-textbox-grey",
-    "tc25-textbox-gray-listbox-cta",
-
-
-    "tc25-dudas-contactanos",
-    "tc25-siguenos-rs-2",
-    "tc25-footer"
-);
 
 
 
