@@ -143,13 +143,13 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.51-6.gif",
+            "img"           :  "26.51-6b.jpg",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/programa-lealtad-together-club.html",
             "alias"         :  "",
-            "mtop"          :  "10",
+            "mtop"          :  "30",
             "mbottom"       :  "0",
-            "width_pc"      :  "100",
+            "width_pc"      :  "91.4",
             "this"          :  "IMG 26.51-6",
             "version"       :  "iqos-2024-v1.twig"
         },

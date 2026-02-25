@@ -91,14 +91,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.58-2.jpg",
+            "img"           :  "26.58-2b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.58-2",
+            "this"          :  "IMG 26.58-2b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -117,14 +117,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.58-4.jpg",
+            "img"           :  "26.58-4b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "20",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.58-4",
+            "this"          :  "IMG 26.58-4b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {

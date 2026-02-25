@@ -45,16 +45,15 @@ switch ( (string)$companyBrand ){
 
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1g   IMG HEADER             https://www.iqos.com/mx/es/home.html
+    "iqos24-center-img",    // 1g   https://www.iqos.com/mx/es/home.html
     "iqos24-greeting",      // 
     "iqos24-center-img",    // 2
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-                            // 3g
-                            // 4    Explorar colores       https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
-    "iqos24-center-img",    // 5    Quiero mi IQOS ILUMA i https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
-    "iqos24-center-img",    // 6g
-    "iqos24-center-img",    // 7    Quiero mi IQOS ILUMA i https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
-    "iqos24-center-img",    // 8
+    // 'iqos24-columns-multirows-img-img',
+    "iqos24-center-img",    // 3    Explorar colores       https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
+    "iqos24-center-img",    // 4
+    "iqos24-center-img",    // 5g 
+    "iqos24-center-img",    // 6    Quiero mi IQOS ILUMA i https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
+    "iqos24-center-img",    // 7 
 
 
 // IMG HEADER             https://www.iqos.com/mx/es/home.html
@@ -72,6 +71,62 @@ $requiredBlocks = array(
     ""
 
 );
+
+
+// YA NO
+/*
+
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Cabin",
+            "msides"    : "4.7",
+            "mtop"      : "0",
+            "mbottom"   : "0",
+            "bgcolor"   : "transparent",
+            "this"      : "",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "top",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "100",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "26.56-3.gif",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#",
+                            "THISIMG"       : "26.56-3"
+                        },
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "26.56-4.jpg",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html",
+                            "THISIMG"       : "26.56-4"
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+*/
+
+
 
 // MODULOS PARA TEMPLATE iqos-2024-v1.twig
 $requiredBlocks__IQOS = array(

@@ -45,15 +45,20 @@ switch ( (string)$companyBrand ){
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
     "iqos24-center-img",    // 1g   https://www.iqos.com/mx/es/home.html
-    "iqos24-greeting",      //  
+    "iqos24-greeting",      // 
     "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
+    "iqos24-center-img",    // 3    Conocer IQOS ILUMA i  https://www.iqos.com/mx/es/descubrir.html
     "iqos24-center-img",    // 4
-    "iqos24-center-img",    // 5g   https://conoce-iqos.com/localizador-tiendas/
-    "iqos24-center-img",    // 6    https://conoce-iqos.com/localizador-tiendas/
+    "iqos24-center-img",    // 5
+    "iqos24-center-img",    // 6g
+    "iqos24-center-img",    // 7    Encontrar tienda cerc https://conoce-iqos.com/localizador-tiendas/
+    "iqos24-center-img",    // 8
 
-// MG HEADER                  https://www.iqos.com/mx/es/home.html
-// Encontrar tienda cercana   https://conoce-iqos.com/localizador-tiendas/
+
+// MG HEADER	https://www.iqos.com/mx/es/home.html
+// Conocer IQOS ILUMA i  https://www.iqos.com/mx/es/descubrir.html
+// Encontrar tienda cerc https://conoce-iqos.com/localizador-tiendas/
+
 
 // Localiza una tienda        https://conoce-iqos.com/localizador-tiendas/
 // Email                      contact.mx@iqos.com

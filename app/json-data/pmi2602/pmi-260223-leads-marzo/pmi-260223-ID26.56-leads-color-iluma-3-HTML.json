@@ -68,7 +68,7 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.56-1.gif",
+            "img"           :  "26.56-1b.gif",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/home.html",
             "alias"         :  "",
@@ -91,116 +91,86 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.56-2.jpg",
+            "img"           :  "26.56-2b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.56-2",
+            "this"          :  "IMG 26.56-2b",
             "version"       :  "iqos-2024-v1.twig"
-        },
-        {
-            "type"      : "iq24-columns",
-            "font"      : "Cabin",
-            "msides"    : "4.7",
-            "mtop"      : "0",
-            "mbottom"   : "0",
-            "bgcolor"   : "transparent",
-            "this"      : "",
-            "columns"   :
-            [
-                {
-                    "coltype"       : "multirows",
-                    "bgcolor"       : "transparent",
-                    "vertical_align": "top",
-                    "param_info"    : "opciones vertical_align: top|middle|bottom",
-                    "bgimg"         : "",
-                    "width_pc"      : "100",
-                    "rows"          :
-                    [
-                        {
-                            "rowtype"       : "img",
-                            "img"           : "26.56-3.gif",
-                            "bgcolor"       : "transparent",
-                            "mtop"          : "0",
-                            "mbottom"       : "0",
-                            "width_pc"      : "100",
-                            "align"         : "center",
-                            "url"           : "#",
-                            "THISIMG"       : "26.56-3"
-                        },
-                        {
-                            "rowtype"       : "img",
-                            "img"           : "26.56-4.jpg",
-                            "bgcolor"       : "transparent",
-                            "mtop"          : "0",
-                            "mbottom"       : "0",
-                            "width_pc"      : "100",
-                            "align"         : "center",
-                            "url"           : "https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html",
-                            "THISIMG"       : "26.56-4"
-                        }
-                    ]
-                }
-            ]
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.56-5.jpg",
+            "img"           :  "26.56-3b.jpg",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.56-3b",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.56-4c.jpg",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.56-4c",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+
+
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.56-5b.gif",
+            "alt"           :  "",
+            "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "30",
             "mbottom"       :  "20",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.56-5",
+            "this"          :  "IMG 26.56-5b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.56-6.gif",
-            "alt"           :  "",
-            "url"           :  "#",
-            "alias"         :  "",
-            "mtop"          :  "0",
-            "mbottom"       :  "0",
-            "width_pc"      :  "100",
-            "this"          :  "IMG 26.56-6",
-            "version"       :  "iqos-2024-v1.twig"
-        },
-        {
-            "type"          :  "iq24-center-img",
-            "bgcolor"       :  "transparent",
-            "img"           :  "26.56-7.jpg",
+            "img"           :  "26.56-6b.jpg",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.56-7",
+            "this"          :  "IMG 26.56-6b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.56-8.jpg",
+            "img"           :  "26.56-7b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.56-8",
+            "this"          :  "IMG 26.56-7b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
             "type"        : "iq24-spacer",
-            "height"      : "30",
+            "height"      : "20",
             "bgcolor"     : "transparent"
         },
 

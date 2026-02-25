@@ -54,12 +54,12 @@ $requiredBlocks = array(
                             // 5g
                             // 6
 
-    "iqos24-center-img",    // 7    Quiero mi ZYN         https://www.zyn.com/mx/es/descubre-zyn/compra-zyn.html
+    "iqos24-center-img",    // 7    Conoce más	https://www.zyn.com/mx/es/descubre-zyn.html
     "iqos24-center-img",    // 8    Aprovechar promoción  https://www.zyn.com/mx/es/descubre-zyn/compra-zyn.html
 
 
 // MG HEADER             https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html  ​
-// Quiero mi ZYN         https://www.zyn.com/mx/es/descubre-zyn/compra-zyn.html
+// Conoce más	https://www.zyn.com/mx/es/descubre-zyn.html
 // Aprovechar promoción  https://www.zyn.com/mx/es/descubre-zyn/compra-zyn.html
 
 // Localiza una tienda   https://conoce-iqos.com/wp-content/localizador-tiendas.html

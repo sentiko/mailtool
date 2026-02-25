@@ -44,39 +44,25 @@ switch ( (string)$companyBrand ){
 
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
+    "iqos24-center-img",    // 1    https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html 
     "iqos24-greeting",      // 
-    
     "iqos24-center-img",    // 2
     "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-
+    "iqos24-center-img",    // 4    Descubrir IQOS       https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html 
     "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
+    "iqos24-center-img",    // 6    Probar ZYN           https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html 
 
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
+// iMG HEADER           https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html 
+// Descubrir IQOS       https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html 
+// Probar ZYN           https://www.iqos.com/mx/es/elige-la-mejor-alternativa-de-iqos-para-fumar-libre-de-humo.html 
+// Localiza una tienda  https://conoce-iqos.com/wp-content/localizador-tiendas.html
+// Email                contact.mx@iqos.com
+// Contáctanos          8001 476769
+// Facebook             https://www.facebook.com/iqosmx
+// Instagram            https://www.instagram.com/iqos_mx/
 
 
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
-
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
-
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
+// ​ZYN es un producto que no es libre de riesgo y contiene nicotina, la cual es adictiva. Venta exclusiva para adultos.
 
 
     'iqos24-spacer',

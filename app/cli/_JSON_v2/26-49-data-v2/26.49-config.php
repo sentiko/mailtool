@@ -50,11 +50,12 @@ $requiredBlocks = array(
     "iqos24-center-img",    // 2
     "iqos24-center-img",    // 3g
     "iqos24-center-img",    // 4
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (30%, 40%, 30%)
+    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (31%, 38%, 31%)
                             // 5
                             // 6
-    "iqos24-img-sharemycode", //  IMG con MSG WA: "Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA i, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-center-img",    // 7                WA Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA i, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.
+    "iqos24-center-img",    // 7                            
+    "iqos24-img-sharemycode", //8  IMG con MSG WA: "Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA i, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
+    "iqos24-center-img",    // 8                WA Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA i, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.
 
 // IMG HEADER                   https://www.iqos.com/mx/es/refiere-a-un-amigo.html
 // Quiero compartir el cambio  Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.

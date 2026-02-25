@@ -68,14 +68,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.50-1.gif",
+            "img"           :  "26.50-1b.gif",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/programa-lealtad-together-club.html",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
-            "width_pc"      :  "91.4",
-            "this"          :  "IMG HEADER 26.50-1",
+            "width_pc"      :  "100",
+            "this"          :  "IMG HEADER 26.50-1b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -91,14 +91,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.50-2.jpg",
+            "img"           :  "26.50-2b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.50-2",
+            "this"          :  "IMG 26.50-2b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -139,21 +139,21 @@
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
-                            "width_pc"      : "70",
+                            "width_pc"      : "60",
                             "align"         : "center",
                             "url"           : "#",
                             "THISIMG"       : "26.50-4"
                         },
                         {
                             "rowtype"       : "img",
-                            "img"           : "26.50-5.jpg",
+                            "img"           : "26.50-5b.jpg",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
                             "width_pc"      : "100",
                             "align"         : "center",
                             "url"           : "https://www.iqos.com/mx/es/programa-lealtad-together-club.html",
-                            "THISIMG"       : "CTA Gira la ruleta y gana 26.50-5"
+                            "THISIMG"       : "CTA Gira la ruleta y gana 26.50-5b"
                         }
                     ]
                 }
@@ -162,40 +162,53 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.50-6.jpg",
+            "img"           :  "26.50-6b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.50-6",
+            "this"          :  "IMG 26.50-6b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.50-7.jpg",
+            "img"           :  "26.50-7b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.50-7",
+            "this"          :  "IMG 26.50-7b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.50-8.jpg",
+            "img"           :  "26.50-8b.gif",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "20",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.50-8b",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.50-9b.jpg",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/programa-lealtad-together-club.html",
             "alias"         :  "",
-            "mtop"          :  "0",
+            "mtop"          :  "20",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "CTA Conocer más 26.50-8",
+            "this"          :  "CTA Conocer más 26.50-9b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {

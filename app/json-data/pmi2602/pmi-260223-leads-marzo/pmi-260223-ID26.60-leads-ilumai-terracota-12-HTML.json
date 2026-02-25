@@ -117,14 +117,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.60-4.gif",
+            "img"           :  "26.60-4b.gif",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.60-4",
+            "this"          :  "IMG 26.60-4b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {

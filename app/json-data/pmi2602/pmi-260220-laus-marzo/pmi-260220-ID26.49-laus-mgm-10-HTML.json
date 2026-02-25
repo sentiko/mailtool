@@ -68,14 +68,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.49-1.gif",
+            "img"           :  "26.49-1b.gif",
             "alt"           :  "",
-            "url"           :  "#",
+            "url"           :  "https://www.iqos.com/mx/es/refiere-a-un-amigo.html",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.49-1",
+            "this"          :  "IMG 26.49-1b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -104,27 +104,27 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.49-3.gif",
+            "img"           :  "26.49-3b.gif",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "91.5",
+            "this"          :  "IMG 26.49-3b",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.49-4b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.49-3",
-            "version"       :  "iqos-2024-v1.twig"
-        },
-        {
-            "type"          :  "iq24-center-img",
-            "bgcolor"       :  "transparent",
-            "img"           :  "26.49-4.jpg",
-            "alt"           :  "",
-            "url"           :  "#",
-            "alias"         :  "",
-            "mtop"          :  "20",
-            "mbottom"       :  "0",
-            "width_pc"      :  "100",
-            "this"          :  "IMG 26.49-4",
+            "this"          :  "IMG 26.49-4b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -140,26 +140,26 @@
                 {
                     "coltype"       : "img",
                     "bgcolor"       : "transparent",
-                    "width_pc"      : "30",
+                    "width_pc"      : "31",
                     "img_width_pc"  : "100",
                     "mtop"          : "0",
                     "mbottom"       : "0",
-                    "img"           : "26.49-5.jpg",
+                    "img"           : "26.49-5b.jpg",
                     "url"           : "#",
-                    "this"          : "IMG 26.49-5"
+                    "this"          : "IMG 26.49-5b"
                 },
                 {
                     "coltype"       : "multirows",
-                    "bgcolor"       : "transparent",
+                    "bgcolor"       : "#00d1d2",
                     "vertical_align": "middle",
                     "param_info"    : "opciones vertical_align: top|middle|bottom",
                     "bgimg"         : "",
-                    "width_pc"      : "40",
+                    "width_pc"      : "38",
                     "rows"          :
                     [
                         {
                             "rowtype"   : "p",
-                            "bgcolor"   : "transparent",
+                            "bgcolor"   : "#00d1d2",
                             "mtop"      : "0",
                             "mbottom"   : "0",
                             "width_pc"  : "80",
@@ -182,52 +182,72 @@
                 {
                     "coltype"       : "img",
                     "bgcolor"       : "transparent",
-                    "width_pc"      : "30",
+                    "width_pc"      : "31",
                     "img_width_pc"  : "100",
                     "mtop"          : "0",
                     "mbottom"       : "0",
-                    "img"           : "26.49-6.jpg",
+                    "img"           : "26.49-6b.jpg",
                     "url"           : "#",
-                    "this"          : "IMG 26.49-6"
+                    "this"          : "IMG 26.49-6b"
                 }
             ]
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.49-7.jpg",
+            "img"           :  "26.49-7b.jpg",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.49-7b",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.49-8b.jpg",
             "alt"           :  "",
 
             "donde_codificar_la_siguiente url" : "https://www.urlencoder.org/",
             "url_ctaDECODED"       : "whatsapp://send?text=",
                                         
+            "txt2Encode_ILUMA20pc" : "Te regalo 20% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+            "txtEncoded_ILUMA20pc" : "Te%20regalo%2020%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
             "txt2Encode_ILUMA25pc" : "Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA i, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
             "txtEncoded_ILUMA25pc" : "Te%20regalo%2025%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%20i%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
 
+            "txt2Encode_ILUMA30pc" : "Te regalo 30% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+            "txtEncoded_ILUMA30pc" : "Te%20regalo%2030%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
+            "txt2Encode_ILUMA35pc" : "Te regalo 35% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+            "txtEncoded_ILUMA35pc" : "Te%20regalo%2035%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
 
             "url_NOK"       : " [whatsapp://send?text=] [https://web.whatsapp.com/send?text=]",
             "url_OK"        : "https://wa.me/?text=",
             "url"           : "https://wa.me/?text=Te%20regalo%2025%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%20i%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
 
             "alias"         :  "",
-            "mtop"          :  "0",
+            "mtop"          :  "20",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.49-7",
+            "this"          :  "IMG 26.49-8b",
             "version"       :  "iqos-2024-v1.twig"
 
         },
-
         {
             "type"        : "iq24-spacer",
-            "height"      : "30",
+            "height"      : "20",
             "bgcolor"     : "transparent"
         },
 
 
-        {   "SECCION"       :  " FOOTER IQOS 2026" },
-        {
-            "type"          :  "iq24-footer-iqos-nofc-disclaimers",
+        {   "SECCION"       :  " FOOTER Forever Curious" },
+        {                        
+            "type"          :  "iq24-footer-iqos-fc-disclaimers",
             "txt"           :  "1. Solo para fumadores adultos o usuarios adultos de otros productos con nicotina.        <br><br>        2. Descuento del 25% vigente del 01 al 31 de marzo de 2026. Consulta <a href=\"https://www.iqos.com/mx/es/terminos-y-condiciones-del-programa-refiere-a-un-amigo.html\" style=\"text-decoration:underline;\" target=\"_blank\">Términos y Condiciones</a>. Válido en la compra y registro del primer dispositivo (IQOS Holder + Cargador IQOS) de cada amigo referido. Para obtener su descuento, el amigo referido debe registrarse y registrar su dispositivo en <a href=\"https://www.iqos.com/mx/es/home.html\" style=\"text-decoration:underline;\" target=\"_blank\">iqos.com</a> y hacerlo válido en Tiendas IQOS, IQOS Corners en Sanborns seleccionados y en <a href=\"https://www.iqos.com/mx/es/home.html\" style=\"text-decoration:underline;\" target=\"_blank\">www.iqos.com</a>",
             "darkmode_img"  :  "0",
             "color"         :  "#34303d",

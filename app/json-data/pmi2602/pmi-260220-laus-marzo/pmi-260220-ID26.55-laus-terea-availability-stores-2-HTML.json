@@ -117,13 +117,26 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.55-4.gif",
+            "img"           :  "26.55-4-top.gif",
+            "alt"           :  "",
+            "url"           :  "https://conoce-iqos.com/wp-content/localizador-tiendas.html",
+            "alias"         :  "",
+            "mtop"          :  "10",
+            "mbottom"       :  "0",
+            "width_pc"      :  "91.4",
+            "this"          :  "IMG 26.55-x",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.55-4-bottom.jpg",
             "alt"           :  "",
             "url"           :  "https://conoce-iqos.com/wp-content/localizador-tiendas.html",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
-            "width_pc"      :  "100",
+            "width_pc"      :  "91.4",
             "this"          :  "IMG 26.55-x",
             "version"       :  "iqos-2024-v1.twig"
         },

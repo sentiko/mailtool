@@ -53,7 +53,8 @@ $requiredBlocks = array(
                             // 5    CTA Gira la ruleta y gana https://www.iqos.com/mx/es/programa-lealtad-together-club.html
     "iqos24-center-img",    // 6
     "iqos24-center-img",    // 7
-    "iqos24-center-img",    // 8    CTA Conocer más           https://www.iqos.com/mx/es/programa-lealtad-together-club.html
+    "iqos24-center-img",    // 8
+    "iqos24-center-img",    // 9    CTA Conocer más           https://www.iqos.com/mx/es/programa-lealtad-together-club.html
 
 
 // IMG HEADER            https://www.iqos.com/mx/es/programa-lealtad-together-club.html

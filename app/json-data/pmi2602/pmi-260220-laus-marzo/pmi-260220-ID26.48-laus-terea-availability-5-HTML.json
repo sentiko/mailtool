@@ -68,7 +68,7 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.48-1.gif",
+            "img"           :  "26.48-1b.gif",
             "alt"           :  "",
             "url"           :  "https://www.iqos.com/mx/es/home.html",
             "alias"         :  "",
@@ -84,21 +84,21 @@
             "color"         : "#34303d",
             "bgcolor"       : "transparent",
             "mtop"          : "40",
-            "mbottom"       : "0",
+            "mbottom"       : "10",
             "txt"           : "Hola, %%first_name%%",
             "this"          : "Hola [nombre] | Turquesa: #00d1d2 | Slate: #34303d"
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.48-2.jpg",
+            "img"           :  "26.48-2b.jpg",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
-            "mbottom"       :  "30",
+            "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.48-2",
+            "this"          :  "IMG 26.48-2b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -122,7 +122,7 @@
                     [
                         {
                             "rowtype"       : "img",
-                            "img"           : "26.48-3.gif",
+                            "img"           : "26.48-3b.gif",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -149,14 +149,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.48-5.gif",
+            "img"           :  "26.48-5c.gif",
             "alt"           :  "",
             "url"           :  "https://conoce-iqos.com/wp-content/localizador-tiendas.html",
             "alias"         :  "",
             "mtop"          :  "30",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "CTA Quiero probarlo  26.48-5",
+            "this"          :  "CTA Quiero probarlo  26.48-5c",
             "version"       :  "iqos-2024-v1.twig"
         },
         {

@@ -47,7 +47,13 @@ $requiredBlocks = array(
     "iqos24-center-img",    // 1g   IMG HEADER           https://www.iqos.com/mx/es/home.html
     "iqos24-greeting",      // 
     "iqos24-center-img",    // 2
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
+
+    "iqos24-center-img",    // 3
+    "iqos24-center-img",    // 4
+    'iqos24-columns-img-xxxxx-img',         //  Columna 1: IMG1 margen izq, Columna 2: CODIGO-MGM, columna 3: margen derecho  
+
+
+    // 'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
                             // 3g
                             // 4    CTA Encontrar mi tienda más cercana                 https://conoce-iqos.com/wp-content/localizador-tiendas.html
 

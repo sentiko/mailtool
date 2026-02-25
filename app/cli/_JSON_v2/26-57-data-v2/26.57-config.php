@@ -45,17 +45,15 @@ switch ( (string)$companyBrand ){
 
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1g   IMG HEADER            https://www.iqos.com/mx/es/descubrir.html
+    "iqos24-center-img",    // 1g   IMG HEADER            https://www.iqos.com/mx/es/home.html
     "iqos24-greeting",      // 
     "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3g
-    "iqos24-center-img",    // 4    Conocer IQOS ILUMA i  https://www.iqos.com/mx/es/descubrir.html
-    "iqos24-center-img",    // 5g                         https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
-    "iqos24-center-img",    // 6g
-    "iqos24-center-img",    // 7    Quiero mi ILUMA i     https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
-    "iqos24-center-img",    // 8
+    "iqos24-center-img",    // 3    Conocer IQOS ILUMA i  https://www.iqos.com/mx/es/descubrir.html
+    "iqos24-center-img",    // 4g    
+    "iqos24-center-img",    // 5    Quiero mi ILUMA i     https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
+    "iqos24-center-img",    // 6    
 
-// IMG HEADER            https://www.iqos.com/mx/es/descubrir.html
+// IMG HEADER            https://www.iqos.com/mx/es/home.html
 // Conocer IQOS ILUMA i  https://www.iqos.com/mx/es/descubrir.html
 // Quiero mi ILUMA i     https://www.iqos.com/mx/es/descubrir-tabaco-para-calentar/productos-iqos.html
 

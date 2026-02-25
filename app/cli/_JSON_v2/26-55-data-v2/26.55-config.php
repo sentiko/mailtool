@@ -48,7 +48,13 @@ $requiredBlocks = array(
     "iqos24-greeting",      // 
     "iqos24-center-img",    // 2
     "iqos24-center-img",    // 3    Encontrar mi IQOS ILUMA i  https://conoce-iqos.com/wp-content/localizador-tiendas.html
-    "iqos24-center-img",    // 4g   Encontrar mi sabor         https://conoce-iqos.com/wp-content/localizador-tiendas.html
+
+
+    "iqos24-center-img",    // 4gtop   Encontrar mi sabor         https://conoce-iqos.com/wp-content/localizador-tiendas.html
+    "iqos24-center-img",    // 4bot   Encontrar mi sabor         https://conoce-iqos.com/wp-content/localizador-tiendas.html
+    
+    
+    
     "iqos24-center-img",    // 5g   Quiero probarlo            https://conoce-iqos.com/wp-content/localizador-tiendas.html
 
 

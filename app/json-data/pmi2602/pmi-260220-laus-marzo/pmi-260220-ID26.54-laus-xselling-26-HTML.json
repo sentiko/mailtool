@@ -173,27 +173,27 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.54-7.jpg",
+            "img"           :  "26.54-7b.jpg",
             "alt"           :  "",
-            "url"           :  "https://www.zyn.com/mx/es/descubre-zyn/compra-zyn.html",
+            "url"           :  "https://www.zyn.com/mx/es/descubre-zyn.html",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "Quiero mi ZYN 26.54-7",
+            "this"          :  "Quiero mi ZYN 26.54-7b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.54-8.jpg",
+            "img"           :  "26.54-8b.jpg",
             "alt"           :  "",
             "url"           :  "https://www.zyn.com/mx/es/descubre-zyn/compra-zyn.html",
             "alias"         :  "",
             "mtop"          :  "0",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "Aprovechar promoción 26.54-8",
+            "this"          :  "conoce mas 26.54-8b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {

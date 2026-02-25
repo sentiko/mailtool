@@ -48,16 +48,16 @@ $requiredBlocks = array(
     "iqos24-center-img",    // 1g   https://www.iqos.com/mx/es/home.html
     "iqos24-greeting",      // 
     "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4g
-    "iqos24-center-img",    // 5    Encontrar mi sabor   https://conoce-iqos.com/localizador-tiendas/
+    "iqos24-center-img",    // 3g
+    "iqos24-center-img",    // 4    Encontrar mi sabor   https://conoce-iqos.com/localizador-tiendas/
+    "iqos24-center-img",    // 5    
     "iqos24-center-img",    // 6    Quiero probarlo      https://conoce-iqos.com/localizador-tiendas/
     "iqos24-center-img",    // 7g
-    "iqos24-center-img",    // 8    Oxxo más cercano     https://conoce-iqos.com/localizador-tiendas/
+    "iqos24-center-img",    // 8    quiero mi iqos iluma https://conoce-iqos.com/localizador-tiendas/
 
 
 // IMA HEADER           https://www.iqos.com/mx/es/home.html
-// Encontrarmi sabor    https://conoce-iqos.com/localizador-tiendas/
+// Encontrar mi sabor   https://conoce-iqos.com/localizador-tiendas/
 // Quiero probarlo      https://conoce-iqos.com/localizador-tiendas/
 // Oxxo más cercano     https://conoce-iqos.com/localizador-tiendas/
 
