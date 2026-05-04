@@ -250,7 +250,7 @@ v1. version inicial. Derivada de pmi-Brand-World-B01-600-v01.twig
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   </head>
-  <body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; font-family: 'ClubZero', 'Noto Sans', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000; width: 100%;" class="md-r">
+  <body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; font-family: {#'ClubZero',#} 'Cabin', Gotham, 'Noto Sans', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000; width: 100%;" class="md-r">
     {% if config_template.Preheader is defined and config_template.Preheader != "" %}<div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden" class="preheader">{{config_template.Preheader}}</div>{% endif %}
 
     <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0; padding: 0; text-align: left; width: 100%; max-width: 600px; line-height: 100%;" role="presentation" class="background-table has-width-600" bgcolor="#FFFFFF" valign="top">
@@ -278,6 +278,29 @@ v1. version inicial. Derivada de pmi-Brand-World-B01-600-v01.twig
                               {{ block("iq24_greeting"   , "iq24-block-greeting.twig") -}}
                           {% elseif blocks[index].type ==  "iq24-greeting-with-bgimg" -%}
                               {{ block("iq24_greeting_with_bgimg"   , "iq24-block-greeting-with-bgimg.twig") -}}
+
+
+
+                          {% elseif blocks[index].type ==  "iq24-footer-iqos-fc-address" -%}
+                            {{ block("iq24_footer_iqos_fc_address"      , "iq24-block-footer-fc-address.twig") -}}
+                          {% elseif blocks[index].type ==  "iq24-footer-iqos-fc-links" -%}
+                            {{ block("iq24_footer_iqos_fc_links"        , "iq24-block-footer-fc-links.twig") -}}
+                          {% elseif blocks[index].type ==  "iq24-footer-iqos-fc-disclaimers" -%}
+                            {{ block("iq24_footer_iqos_fc_disclaimers"  , "iq24-block-footer-fc-disclaimers.twig") -}}
+
+
+
+
+
+                          {% elseif blocks[index].type ==  "iq24-footer-iqos-nofc-disclaimers" -%}
+                            {{ block("iq24_footer_iqos_nofc_disclaimers"  , "iq24-block-footer-nofc-disclaimers.twig") -}}
+                           {% elseif blocks[index].type == "iq26-footer-iqosclub-disclaimers" -%}
+                            {{ block("iq26_footer_iqosclub_disclaimers"  , "iq26-block-footer-iqosclub-disclaimers.twig") -}}
+
+
+
+
+
                           {% elseif blocks[index].type ==  "iq24-center-img-with-bgimg" -%}
                               {{ block("iq24_center_img_with_bgimg"   , "iq24-block-center-img-with-bgimg.twig") -}}
                           {% elseif blocks[index].type ==  "iq24-greeting-over-img" -%}
@@ -306,7 +329,8 @@ v1. version inicial. Derivada de pmi-Brand-World-B01-600-v01.twig
                           {% elseif blocks[index].type ==  "cz25-table4" -%}
                               {{ block("cz25_table4"     , "cz25-block-table4.twig") -}}
 
-
+                          {% elseif blocks[index].type ==  "ic26-tabla-actividades" -%}
+                              {{ block("ic26_tabla1"  , "ic26_tabla1.twig") -}}
 
 
 

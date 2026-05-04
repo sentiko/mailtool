@@ -7,19 +7,19 @@ $p_yy =  '26';
 $p_mm =  '04';
 $p_dd =  '20';
 $p_name4folder =  'transaccionales';
-$p_name4json =  'cz-verificacion-de-usuario';
+$p_name4json =  'ic-verificacion-de-usuario';
 $p_name4folderDCE =  'NA';
-$p_mailname4DCE =  'CZ_Verificación de usuario';
+$p_mailname4DCE =  'IC_Verificación de usuario';
 $p_customerkey_DCE =  'NA';
 $p_name4folderFSH =  'NA';
-$p_mailname4FSH =  'CZ_Verificación de usuario';
+$p_mailname4FSH =  'IC_Verificación de usuario';
 $p_customerkey_FSH =  'NA';
 $id_FSH_folder =  'NA';
 
 
 //-----------------------------------------
 
-$companyBrand     = "cz";
+$companyBrand     = "ic";
 
 switch ( (string)$companyBrand ){
     case 'zyn':
@@ -29,6 +29,11 @@ switch ( (string)$companyBrand ){
         break;
     case 'cz':
         // $companyBrand  = "cz";
+        $TwigTemplate     = "clubzero-2025-v1.twig";
+        $bgColor          = "#FFFFFF";    // Don't use "transparent"
+        break;
+    case 'ic':
+        // $companyBrand  = "ic";
         $TwigTemplate     = "clubzero-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
@@ -45,44 +50,42 @@ switch ( (string)$companyBrand ){
 
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
-    "iqos24-greeting",      // 
+    "iqos24-center-img",    // 1c
+    "iqos24-columns-img-greeting-img",      //  2c, hola , 3c  (4%, 92%, 4%)
+    "iqos24-center-img",    // 4c
+    'iqos24-columns-img-xxxxx-img',         //  5c, referralcode, 6c (25%, 50%, 25%)
+    "iqos24-center-img",    // 7c    CTA Completar registro
+
+
     
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
-
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
-
-
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
-
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
-
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
-
-
-    'iqos24-spacer',
+    /////////////////////////////////////////////
+    "ic26-contactanos",
     "iq26-footer-iqos",
     ""
+
+
+    // v1 
+    // "iqos24-header-iqos",   // 
+    // "iqos24-center-img",    // 1
+    // "iqos24-columns-img-greeting-img",      //  2, hola , 3  (4%, 92%, 4%)
+    // "iqos24-center-img",    // 4
+    // 'iqos24-columns-img-xxxxx-img',         //  5, referralcode, 6 (25%, 50%, 25%)
+    // "iqos24-center-img",    // 7    CTA Completar registro
+    // "iqos24-center-img",    // 8
+    /////////////////////////////
+    // "ic26-contactanos",
+    // "iq26-footer-iqos",
+    // ""
+
+    // v2
+    // "iqos24-header-iqos",   // 
+    // "ic26-columns-multirows-img-txt-img", // 1,2
+    /////////////////////////////
+    // "ic26-contactanos",
+    // "iq26-footer-iqos",
+    // ""
+
+
 
 );
 
@@ -142,27 +145,81 @@ $requiredBlocks__IQOS = array(
 
     ""
 );
-// MODULOS PARA TEMPLATE zyn-2025-v1.twig
-$requiredBlocks__ZYN = array(
-    "zyn25-header-zyn",     
+
+// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [TOGETHER CLUB]
+$requiredBlocks_cz = array(
+    "tc25-header",          // 
+    "iqos24-center-img",    // 
+    'cz25-p700',            // 
+    "iqos24-center-img",    // 
+    "iqos24-center-img",    // 
+    
+    // saludo
+    "cz25-greeting",        // 
+    'cz25-p700',            // 
+    'cz25-p300',            // 
+
+    "iqos24-center-img",    // 
+    'iqos24-columns',       // 
+        
+    "iqos24-center-img",    // 
+    'cz25-p300',            // 
+    'cz25-p700',            // 
+
+    "tc25-textbox-black",
+    "tc25-textbox-grey",
+    "tc25-textbox-gray-listbox-cta",
+
+
+    "tc25-dudas-contactanos",
+    "tc25-siguenos-rs-2",
+    "tc25-footer"
+);
+
+
+// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [IQOS CLUB]
+$requiredBlocks_ic = array(
+    "iqos24-header-iqos",   // 
     "iqos24-center-img",    // 1
-    "zyn25-greeting",       // 
+    "ic26-greeting",        // 
+    
     "iqos24-center-img",    // 2
     "iqos24-center-img",    // 3
     "iqos24-center-img",    // 4
     "iqos24-center-img",    // 5
     "iqos24-center-img",    // 6
+    "iqos24-center-img",    // 7
+    "iqos24-center-img",    // 8
+    "iqos24-center-img",    // 9
 
-    "zyn25-zyn-siguenos-ig",   // zyn-siguenos-ig.jpg
-    "zyn25-zyn-find-your-zyn", // zyn-find-your-zyn.jpg
-    "iqos24-columns",       // #, XX , #  (21%, 58%, 21%)
+    "ic26-greeting",
+    "ic26-p300",
+    "ic26-p700",
+    "ic26-Row-TradePointsA",    // 26.73
+    "ic26-Row-TradePointsB",    // 26.75, 26.76
+    "ic26-Row-TradePointsC",    // 26.77, 26.79
+    "ic26-columns-multirows-img-txt-img",
+    "ic26-tabla-actividades",
+    
+    'iqos24-columns',       // 
+    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
+    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
+    "iqos24-columns-multirows-img-img-img", //
+    "iqos24-columns-multirows-img-greeting-img",//
+    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
+    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
 
-    "iqos24-spacer",
-    "zyn25-legales",
-    "zyn25-footer",
+
+
+    "tc25-textbox-black",
+    "tc25-textbox-grey",
+    "tc25-textbox-gray-listbox-cta",
+
+    /////////////////////////////////////////////
+    "ic26-contactanos",
+    "iq26-footer-iqos",
     ""
 );
-
 
 
 

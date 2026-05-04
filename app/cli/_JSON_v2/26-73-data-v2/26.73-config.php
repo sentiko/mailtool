@@ -7,19 +7,19 @@ $p_yy =  '26';
 $p_mm =  '04';
 $p_dd =  '20';
 $p_name4folder =  'transaccionales';
-$p_name4json =  'cz-redencion';
+$p_name4json =  'ic-redencion';
 $p_name4folderDCE =  'NA';
-$p_mailname4DCE =  'CZ_Redención';
+$p_mailname4DCE =  'IC_Redención';
 $p_customerkey_DCE =  'NA';
 $p_name4folderFSH =  'NA';
-$p_mailname4FSH =  'CZ_Redención';
+$p_mailname4FSH =  'IC_Redención';
 $p_customerkey_FSH =  'NA';
 $id_FSH_folder =  'NA';
 
 
 //-----------------------------------------
 
-$companyBrand     = "cz";
+$companyBrand     = "ic";
 
 switch ( (string)$companyBrand ){
     case 'zyn':
@@ -27,7 +27,7 @@ switch ( (string)$companyBrand ){
         $TwigTemplate     = "zyn-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
-    case 'cz':
+    case 'ic':
         // $companyBrand  = "cz";
         $TwigTemplate     = "clubzero-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
@@ -48,42 +48,31 @@ $requiredBlocks = array(
     "iqos24-center-img",    // 1
     "iqos24-greeting",      // 
     
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
+    'cz25-p300',            // ¿Todo listo para disfrutar de<br> <span style=\"color:#34303d;font-weight:700;\">recompensas exclusivas?</span>
 
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
+    'ic26-Row-TradePointsA',       //  R1 TablaCanjeA
+    'ic26-Row-TradePointsA',       //  R2 TablaCanjeA
+    'ic26-Row-TradePointsA',       //  R3 TablaCanjeA
 
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
+    "iqos24-columns-multirows-img-greeting-img",
+                            // Navy Box - Te quedan 
+                            // [NUMERO DE PUNTOS] 
+                            // Continua acumulando puntos para poder ganar 
+                            // [NOMBRE DE PREMIO]
 
+    'cz25-p300',            // Además, solo por este mes....
+    'cz25-p700',            // [CANTIDAD DE PUNTOS]
+    'cz25-p300',            // realizando las siguientes actividades
 
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
-
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
-
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
-
+    'cz25-table1',          // Tabla ACTIVIDAD / Valor de Puntos
 
     'iqos24-spacer',
+    "iqos24-center-img",    // 4
+    "iqos24-center-img",    // 5
+
+    "ic26-contactanos",
     "iq26-footer-iqos",
     ""
-
 );
 
 // MODULOS PARA TEMPLATE iqos-2024-v1.twig

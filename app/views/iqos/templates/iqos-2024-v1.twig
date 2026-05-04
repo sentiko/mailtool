@@ -277,16 +277,26 @@ v1. version inicial. Derivada de pmi-Brand-World-B01-600-v01.twig
                           {% elseif blocks[index].type ==  "iq24-footer-iqos-fc-disclaimers" -%}
                             {{ block("iq24_footer_iqos_fc_disclaimers"  , "iq24-block-footer-fc-disclaimers.twig") -}}
 
+
+
+
+
+
                           {% elseif blocks[index].type ==  "iq24-footer-iqos-nofc-disclaimers" -%}
                             {{ block("iq24_footer_iqos_nofc_disclaimers"  , "iq24-block-footer-nofc-disclaimers.twig") -}}
  
 
+                          {% elseif blocks[index].type ==  "iq26-footer-iqosclub-disclaimers" -%}
+                            {{ block("iq26_footer_iqosclub_disclaimers"  , "iq26-block-footer-iqosclub-disclaimers.twig") -}}
+
+
+
+
+
+
 
                           {% elseif blocks[index].type ==  "iq24-center-img-with-bgimg" -%}
                               {{ block("iq24_center_img_with_bgimg"   , "iq24-block-center-img-with-bgimg.twig") -}}
-
-
-
                           {% elseif blocks[index].type ==  "iq24-greeting-over-img" -%}
                               {{ block("iq24_greeting_over_img"   , "iq24-block-greeting-over-img.twig") -}}
                           {% elseif blocks[index].type ==  "iq24-cta" -%}

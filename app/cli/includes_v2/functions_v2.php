@@ -764,3 +764,114 @@ function askUserforFileOverwriteConfirmation($file , $abort = 1)
     echo PHP_EOL;
     return $proceed;
 }
+
+
+
+/**
+ * Renombra archivos en una carpeta basándose en una plantilla específica.
+ *
+ * @param string $folder_path La ruta de la carpeta donde se encuentran los archivos.
+ * @param string $base_id El identificador base a usar en el nombre (ID).
+ * @param int $start_number El número inicial para la secuencia (X). Por defecto es 1.
+ * @return array Un array con el resultado de la operación (éxito o error).
+ */
+function rename_files_in_folder(string $folder_path, string $base_id, int $start_number = 1): array
+{
+    $results = [];
+
+    // 1. Validar si la carpeta existe
+    if (!is_dir($folder_path)) {
+        return ['status' => 'error', 'message' => 'La ruta de la carpeta no es válida.'];
+    }
+
+    // 2. Obtener todos los archivos en la carpeta
+    // Usamos scandir para obtener los nombres de los archivos y directorios
+    $files = scandir($folder_path);
+
+    if (empty($files)) {
+        return ['status' => 'info', 'message' => 'La carpeta está vacía.'];
+    }
+
+    // 3. Filtrar solo los archivos (ignorando . y ..)
+    $files_to_process = [];
+    foreach ($files as $file) {
+        if (is_file($folder_path . DIRECTORY_SEPARATOR . $file)) {
+            $files_to_process[] = $file;
+        }
+    }
+
+    // 4. Ordenar alfabéticamente
+    sort($files_to_process);
+
+    // 5. Renombrar los archivos
+    $counter = $start_number;
+    $renamed_count = 0;
+
+    foreach ($files_to_process as $old_filename) {
+        // Obtener la información del archivo (nombre base y extensión)
+        $path = $folder_path . DIRECTORY_SEPARATOR . $old_filename;
+        $info = pathinfo($old_filename);
+        $extension = isset($info['extension']) ? '.' . $info['extension'] : '';
+        $filename_without_ext = $info['filename'];
+
+        // Construir el nuevo nombre usando la plantilla: "26.ID-X.EXT"
+        $new_filename = "26." . $base_id . "-" . $counter . $extension;
+        $new_path = $folder_path . DIRECTORY_SEPARATOR . $new_filename;
+
+        // Realizar el renombrado
+        if (rename($path, $new_path)) {
+            $results[] = ['status' => 'success', 'original' => $old_filename, 'new' => $new_filename];
+            $renamed_count++;
+        } else {
+            $results[] = ['status' => 'error', 'file' => $old_filename, 'message' => 'Error al renombrar el archivo.'];
+        }
+
+        // Incrementar el contador
+        $counter++;
+    }
+
+    return [
+        'status' => 'completed',
+        'message' => "Se procesaron los archivos. Se renombraron {$renamed_count} archivos.",
+        'details' => $results
+    ];
+}
+
+/*
+    // =========================================================================
+    // EJEMPLO DE USO
+    // =========================================================================
+
+    // 1. Crear una carpeta de prueba (asegúrate de que esta ruta exista)
+    $test_dir = 'archivos_a_renombrar';
+    if (!is_dir($test_dir)) {
+        mkdir($test_dir);
+    }
+
+    // Crear algunos archivos de ejemplo
+    file_put_contents($test_dir . '/foto1.jpg', 'contenido');
+    file_put_contents($test_dir . '/doc_final.pdf', 'contenido');
+    file_put_contents($test_dir . '/imagen_a.png', 'contenido');
+    file_put_contents($test_dir . '/backup.txt', 'contenido');
+
+
+    echo "--- INICIO DEL PROCESO DE RENOMBRADO ---\n";
+
+    // 2. Llamar a la función
+    $base_id = 'PROYECTO_2023';
+    $start_number = 1; // El número de inicio para la secuencia X
+
+    $output = rename_files_in_folder($test_dir, $base_id, $start_number);
+
+    // 3. Mostrar los resultados
+    print_r($output);
+
+    echo "\n--- CONTENIDO DE LA CARPETA DESPUÉS DEL RENOMBRADO ---\n";
+    // Verificar el contenido de la carpeta
+    echo "Contenido de '{$test_dir}':\n";
+    if (is_dir($test_dir)) {
+        print_r(scandir($test_dir));
+    }
+
+    ?>
+*/

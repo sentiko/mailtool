@@ -18,7 +18,7 @@ $id_FSH_folder     = "999";
 
 //-----------------------------------------
 
-$companyBrand     = "pmi";
+$companyBrand     = "zyn";
 
 switch ( (string)$companyBrand ){
     case 'zyn':
@@ -28,6 +28,11 @@ switch ( (string)$companyBrand ){
         break;
     case 'cz':
         // $companyBrand  = "cz";
+        $TwigTemplate     = "clubzero-2025-v1.twig";
+        $bgColor          = "#FFFFFF";    // Don't use "transparent"
+        break;
+    case 'ic':
+        // $companyBrand  = "ic";
         $TwigTemplate     = "clubzero-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
@@ -42,7 +47,28 @@ switch ( (string)$companyBrand ){
 
 //-----------------------------------------
 
+
 $requiredBlocks = array(
+    "zyn25-header-zyn",     
+    "iqos24-center-img",    // 1
+    "zyn25-greeting",       // 
+    "iqos24-center-img",    // 2
+    "iqos24-center-img",    // 3
+    "iqos24-center-img",    // 4
+    "iqos24-center-img",    // 5
+    "iqos24-center-img",    // 6
+
+    "zyn25-zyn-siguenos-ig",   // zyn-siguenos-ig.jpg
+    "zyn25-zyn-find-your-zyn", // zyn-find-your-zyn.jpg
+    "iqos24-columns",       // #, XX , #  (21%, 58%, 21%)
+
+    "iqos24-spacer",
+    "zyn25-legales",
+    "zyn25-footer",
+    ""
+);
+
+$requiredBlocks2025 = array(
     "iqos24-header-iqos",   // 
     "iqos24-center-img",    // 1
     "iqos24-greeting",      // 
@@ -79,12 +105,12 @@ $requiredBlocks = array(
     'iqos24-columns',       // 
 
 
+    "iq26-footer-transaccionales", // iq26-footer-iqosclub-disclaimers
     'iqos24-spacer',
-    "iq26-footer-iqos",
+    "iq26-footer-iqos",     // iq24-footer-iqos-nofc-disclaimers
     ""
 
 );
-
 // MODULOS PARA TEMPLATE iqos-2024-v1.twig
 $requiredBlocks__IQOS = array(
     "iqos24-footer-iqos-forever-curious",
@@ -161,8 +187,49 @@ $requiredBlocks__ZYN = array(
     "zyn25-footer",
     ""
 );
+// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [IQOS CLUB]
+$requiredBlocks_ic = array(
+    "iqos24-header-iqos",   // 
+    "iqos24-center-img",    // 1
+    "ic26-greeting",        // 
+    
+    "iqos24-center-img",    // 2
+    "iqos24-center-img",    // 3
+    "iqos24-center-img",    // 4
+    "iqos24-center-img",    // 5
+    "iqos24-center-img",    // 6
+    "iqos24-center-img",    // 7
+    "iqos24-center-img",    // 8
+    "iqos24-center-img",    // 9
+
+    "ic26-greeting",
+    "ic26-p300",
+    "ic26-p700",
+    "ic26-Row-TradePointsA",    // 26.73
+    "ic26-Row-TradePointsB",    // 26.75, 26.76
+    "ic26-Row-TradePointsC",    // 26.77, 26.79
+    "ic26-columns-multirows-img-txt-img",
+    "ic26-tabla-actividades",
+    
+    'iqos24-columns',       // 
+    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
+    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
+    "iqos24-columns-multirows-img-img-img", //
+    "iqos24-columns-multirows-img-greeting-img",//
+    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
+    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
 
 
+
+    "tc25-textbox-black",
+    "tc25-textbox-grey",
+    "tc25-textbox-gray-listbox-cta",
+
+    /////////////////////////////////////////////
+    "ic26-contactanos",
+    "iq26-footer-iqos",
+    ""
+);
 
 
 /*

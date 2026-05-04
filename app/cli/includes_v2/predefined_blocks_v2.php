@@ -33,6 +33,625 @@ $libraryBlocks = array();
 
 
 
+/** ------------------------------------------------------
+ *    START CRM 2026-04    Plantilla [clubzero-2025-v1.twig]
+ *      IQOS Club
+ *  ------------------------------------------------------
+ */
+$libraryBlocks['iq26-footer-transaccionales'] ='
+
+
+        {   "SECCION"       :  " FOOTER IQOS 2026" },
+        {                        
+            "type"          :  "iq26-footer-iqosclub-disclaimers",
+            "txt"           :  "",
+            "darkmode_img"  :  "0",
+            "color"         :  "#34303d",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "this_TXT"      :  "{LEGALES DE ESTA PIEZA}",
+            "DTI":
+            {
+                "showIluma"  :  "0",
+                "txtIluma"   :  "IQOS ILUMA<sup>&trade;</sup> está diseñado para usarse únicamente con unidades de tabaco<br>SMARTCORE STICKS<sup>&trade;</sup>.<br><br>No utilice IQOS ILUMA<sup>&trade;</sup> y unidades de tabaco SMARTCORE STICKS<sup>&trade;</sup> con generaciones anteriores de IQOS<sup>&trade;</sup>, ya que esto puede causar daños a su dispositivo.<br><br>Más información en <a href=\"https://www.iqos.com/\" style=\"text-decoration:underline;\" target=\"_blank\">www.iqos.com</a>.",
+                "txtRisk"    :  "Este producto no es libre de riesgo, contiene nicotina<br> la cual es adictiva. Solo para adultos.",
+                "txtInfo"    :  "Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
+                "txtPrivacy" :  "Consulta nuestro aviso de privacidad con base en el cual son tratados tus datos personales <a href=\"https://www.pmiprivacy.com/es-la/consumer\" alias=\"footer_pmi_privacy\" style=\"text-decoration:underline;\" target=\"_blank\">aquí</a>.<br><br>Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
+                "THIS"       :  "{LEGALES [ILUMA], Duty To Inform}"
+            },
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-footer-iqos-fc-links",
+            "darkmode_img"  :  "0",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-footer-iqos-fc-address",
+            "color"         :  "#34303d",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "version"       :  "iqos-2024-v1.twig"
+        }';
+/** ------------------------------------------------------
+ *    START CRM 2026-04    Plantilla [clubzero-2025-v1.twig]
+ *      IQOS Club
+ *  ------------------------------------------------------
+ */
+$libraryBlocks['ic26-greeting'] ='
+        {
+            "type"          : "iq24-greeting",
+            "fontweight"    : "700",
+            "color"         : "#34303d",
+            "bgcolor"       : "transparent",
+            "mtop"          : "40",
+            "mbottom"       : "20",
+            "txt"           : "Hola, [Nombre]",
+            "this"          : "Hola [nombre] | Turquesa: #00d1d2 | Slate: #34303d"
+        },';
+$libraryBlocks['ic26-p300'] ='
+        {
+            "type"          : "cz25-p",
+            "font"          : "Gotham, \'Gabarito\', \'Noto Sans\'",
+            "fontweight"    : "300",
+            "fontsize"      : "22",
+            "height"        : "26",
+            "txtclass"      : "txt_22",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "transparent",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "msides"        : "0",
+            "mcolor"        : "transparent",
+            "txt"           : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim ad minima veniam,</span> quis nostrum <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+            "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d ",
+            "version"       : "clubzero-2025-v1.twig"
+        },';
+$libraryBlocks['ic26-p700'] ='
+        {
+            "type"          : "cz25-p",
+            "font"          : "Gotham, \'Gabarito\', \'Noto Sans\'",
+            "fontweight"    : "700",
+            "fontsize"      : "22",
+            "height"        : "26",
+            "txtclass"      : "txt_22",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "transparent",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "msides"        : "0",
+            "mcolor"        : "transparent",
+            "txt"           : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim ad minima veniam,</span> quis nostrum <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+            "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d ",
+            "version"       : "clubzero-2025-v1.twig"
+        },';
+$libraryBlocks['ic26-contactanos'] ='
+
+        {   "SECCION"       : "¿TIENES DUDAS? ¡CONTACTANOS!"},
+            {
+            "type"          : "cz25-p",
+            "font"          : "Gotham, \'Gabarito\', \'Noto Sans\'",
+            "fontweight"    : "300",
+            "fontsize"      : "24",
+            "height"        : "24",
+            "txtclass"      : "txt_24",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#393e44",
+            "bgcolor"       : "transparent",
+            "mtop"          : "45",
+            "mbottom"       : "45",
+            "msides"        : "0",
+            "mcolor"        : "transparent",
+            "txt"           : "<span style=\"font-weight:700;\">¿Tienes dudas?</span> ¡Contáctanos!",
+            "this"          : "TXT ¿Tienes dudas? ¡Contáctanos! | Turquesa: #00d1d2 | Slate: #34303d ",
+            "version"       : "clubzero-2025-v1.twig"
+        },
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Cabin",
+            "msides"    : "0",
+            "mtop"      : "0",
+            "mbottom"   : "0",
+            "bgcolor"   : "transparent",
+            "this"      : "",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "4",
+                    "height"        : "auto"
+                },
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "top",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "30",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "contacto-llamanos.png",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "tel:*993",
+                            "THISIMG"       : "contacto-llamanos"
+                        },
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "contacto-mail.png",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#LINKMAIL",
+                            "THISIMG"       : "contacto-mail"
+                        }
+                    ]
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "1",
+                    "height"        : "auto"
+                },
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "top",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "30",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "contacto-sms.png",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#LINK_SMS",
+                            "THISIMG"       : "contacto-sms"
+                        },
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "contacto-faq.png",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#LINK_FAQ",
+                            "THISIMG"       : "contacto-faq"
+                        }
+                    ]
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "1",
+                    "height"        : "auto"
+                },
+                {
+                    "coltype"       : "img",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "30",
+                    "img_width_pc"  : "100",
+                    "mtop"          : "0",
+                    "mbottom"       : "0",
+                    "img"           : "contacto-ig.png",
+                    "url"           : "https://www.instagram.com/iqos_mx/",
+                    "this"          : "IMG contacto-ig"
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "4",
+                    "height"        : "auto"
+                }                
+            ]
+        },
+        {
+            "type"        : "iq24-spacer",
+            "height"      : "20",
+            "bgcolor"     : "transparent"
+        },';
+    /* bloque de imagen en lugar de texto
+            {
+                "type"          :  "iq24-center-img",
+                "bgcolor"       :  "transparent",
+                "img"           :  "contacto-dudas.png",
+                "alt"           :  "",
+                "url"           :  "#",
+                "alias"         :  "",
+                "mtop"          :  "0",
+                "mbottom"       :  "0",
+                "width_pc"      :  "100",
+                "this"          :  "¿Tienes dudas? ¡Contáctanos! IMG contacto-dudas",
+                "version"       :  "iqos-2024-v1.twig"
+            },
+
+    */
+
+
+$libraryBlocks['ic26-Row-TradePointsA'] ='
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Cabin",
+            "msides"    : "0",
+            "mtop"      : "20",
+            "mbottom"   : "20",
+            "bgcolor"   : "transparent",
+            "bgcolor2"  : "cyan",
+            "this"      : "RENGLON 1 TABLA PREMIOS CANJEADOS",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "bgcolor2"      : "coral",
+                    "width_pc"      : "5",
+                    "height"        : "auto"
+                },
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "bgcolor2"      : "green",
+                    "vertical_align": "middle",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "60",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"   : "p",
+                            "bgcolor"   : "transparent",
+                            "mtop"      : "0",
+                            "mbottom"   : "0",
+                            "width_pc"  : "100",
+                            "texts"     :
+                            [
+                                {
+                                    "txt"         : "Canjeaste<br><span style=\"color:#34303d;font-weight:700;\">[XXXX]</span><br>puntos por<br><span style=\"color:#34303d;font-weight:700;\">[NOMBRE DEL PREMIO]</span>",
+                                    "fontweight"  : "300",
+                                    "fontsize"    : "22",
+                                    "height"      : "26",
+                                    "txtclass"    : "txt_22",
+                                    "align"       : "left",
+                                    "color"       : "#34303d",
+                                    "this"        : "TXT | Turquesa: #00d1d2 | Slate: #34303d "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "coltype"       : "img",
+                    "bgcolor"       : "transparent",
+                    "bgcolor2"      : "cyan",
+                    "width_pc"      : "30",
+                    "img_width_pc"  : "100",
+                    "mtop"          : "0",
+                    "mbottom"       : "0",
+                    "img"           : "imagen-premio.png",
+                    "url"           : "#",
+                    "this"          : "IMG imagen-premio"
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "bgcolor2"      : "coral",
+                    "width_pc"      : "5",
+                    "height"        : "auto"
+                }
+            ]
+        },';
+$libraryBlocks['ic26-Row-TradePointsB'] ='
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Gotham, \'Gabarito\', \'Noto Sans\'",
+            "msides"    : "0",
+            "mtop"      : "10",
+            "mbottom"   : "10",
+            "bgcolor"   : "transparent",
+            "this"      : "RENGLON TABLA PUNTOS A CANJEAR",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "2",
+                    "height"        : "auto"
+                },
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "middle",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "33",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"   : "p",
+                            "bgcolor"   : "transparent",
+                            "mtop"      : "20",
+                            "mbottom"   : "5",
+                            "width_pc"  : "80",
+                            "texts"     :
+                            [   
+                                {
+                                    "txt"         : "[NUMERO DE PUNTOS] Puntos",
+                                    "fontweight"  : "700",
+                                    "fontsize"    : "24",
+                                    "height"      : "24",
+                                    "txtclass"    : "txt_24",
+                                    "align"       : "center",
+                                    "color"       : "#34303d",
+                                    "this"        : "TXT | Rosa: #e6177a | Slate: #34303d "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "coltype"       : "img",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "30",
+                    "img_width_pc"  : "90",
+                    "mtop"          : "0",
+                    "mbottom"       : "0",
+                    "img"           : "imagen-del-premio.png",
+                    "url"           : "#",
+                    "this"          : "IMG imagen-del-premio"
+                },
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "middle",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "33",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"   : "p",
+                            "bgcolor"   : "transparent",
+                            "mtop"      : "20",
+                            "mbottom"   : "5",
+                            "width_pc"  : "80",
+                            "texts"     :
+                            [   
+                                {
+                                    "txt"         : "[NOMBRE DEL PREMIO]",
+                                    "fontweight"  : "700",
+                                    "fontsize"    : "24",
+                                    "height"      : "24",
+                                    "txtclass"    : "txt_24",
+                                    "align"       : "center",
+                                    "color"       : "#34303d",
+                                    "this"        : "TXT | Rosa: #e6177a | Slate: #34303d "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "2",
+                    "height"        : "auto"
+                }
+            ]
+        },';
+$libraryBlocks['ic26-Row-TradePointsC'] ='
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Cabin",
+            "msides"    : "0",
+            "mtop"      : "10",
+            "mbottom"   : "10",
+            "bgcolor"   : "transparent",
+            "bgcolor2"   : "cyan",
+            "this"      : "RENGLON TABLA PREMIOS - PUNTOS",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "10",
+                    "height"        : "auto"
+                },
+                {
+                    "coltype"       : "img",
+                    "bgcolor"       : "transparent",
+                    "bgcolor2"      : "coral",
+                    "width_pc"      : "35",
+                    "img_width_pc"  : "80",
+                    "mtop"          : "0",
+                    "mbottom"       : "0",
+                    "img"           : "imagen-del-premio.png",
+                    "url"           : "#",
+                    "this"          : "IMG imagen-del-premio"
+                },
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "bgcolor2"      : "red",
+                    "vertical_align": "middle",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "45",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"   : "p",
+                            "bgcolor"   : "transparent",
+                            "mtop"      : "0",
+                            "mbottom"   : "0",
+                            "width_pc"  : "90",
+                            "texts"     :
+                            [   
+                                {
+                                    "txt"         : "[NOMBRE DEL PREMIO]<br>[NUMERO DE PUNTOS] Puntos",
+                                    "fontweight"  : "300",
+                                    "fontsize"    : "20",
+                                    "height"      : "24",
+                                    "txtclass"    : "txt_20",
+                                    "align"       : "left",
+                                    "color"       : "#34303d",
+                                    "this"        : "TXT | Turquesa: #00d1d2 | Slate: #34303d "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "10",
+                    "height"        : "auto"
+                }
+            ]
+        },';
+$libraryBlocks['ic26-columns-multirows-img-txt-img'] ='
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Cabin",
+            "msides"    : "4.3",
+            "mtop"      : "0",
+            "mbottom"   : "0",
+            "bgcolor"   : "transparent",
+            "this"      : "",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "middle",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "100",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "22.id-x.jpg",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#",
+                            "THISIMG"       : "22.id-x"
+                        },
+                        {
+                            "rowtype"   : "p",
+                            "bgcolor"   : "transparent",
+                            "mtop"      : "0",
+                            "mbottom"   : "0",
+                            "width_pc"  : "100",
+                            "texts"     :
+                            [   
+                                {
+                                    "txt"         : "Scourge of the seven seas scuttle cutlass league",
+                                    "fontweight"  : "700",
+                                    "fontsize"    : "26",
+                                    "height"      : "26",
+                                    "txtclass"    : "txt_26",
+                                    "align"       : "center",
+                                    "color"       : "#34303d",
+                                    "this"        : "TXT | Turquesa: #00d1d2 | Slate: #34303d"
+                                }
+                            ]
+                        },
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "22.id-x.jpg",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "0",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#",
+                            "THISIMG"       : "22.id-x"
+                        }
+                    ]
+                }
+            ]
+        },';
+$libraryBlocks['ic26-tabla-actividades'] ='
+
+
+
+        {   "SECCION"       : "TABLA ACTIVIDAD - VALOR PUNTOS"  },
+        {
+            "type"          : "ic26-tabla-actividades",
+            "cellpadding"   : "10",
+            "height"        : "18",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "mcolor"        : "transparent",
+            "cellcolor"     : "#faf7f4",
+            "width_pc"      : "91.4",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "5",
+                    "this"          : ""
+                },
+                {
+                    "coltype"       : "info",
+                    "bgcolor"       : "transparent",
+                    "color"         : "#34303d",
+                    "width_pc"      : "45",
+                    "font"          : "Gotham, \'Gabarito\', \'Noto Sans\'",
+                    "fontweight"    : "700",
+                    "fontsize"      : "14",
+                    "txtclass"      : "txt_14",
+                    "txt"           : "Nombre actividad",
+                    "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d"
+                },
+                {
+                    "coltype"       : "info",
+                    "bgcolor"       : "transparent",
+                    "color"         : "#34303d",
+                    "width_pc"      : "45",
+                    "font"          : "Gotham, \'Gabarito\', \'Noto Sans\'",
+                    "fontweight"    : "300",
+                    "fontsize"      : "14",
+                    "txtclass"      : "txt_14",
+                    "txt"           : "200 puntos",
+                    "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d"
+                },
+                {
+                    "coltype"       : "spacer",
+                    "bgcolor"       : "transparent",
+                    "width_pc"      : "5",
+                    "this"          : ""
+                }                
+            ],
+            "this"          : "TABLA ACTIVIDAD - VALOR PUNTOS",
+            "version"       : "clubzero-2025-v1.twig"
+        },';
+
 
 /** ------------------------------------------------------
  *    START CRM 2025-05    Plantilla clubzero-2025-v1.twig
@@ -1442,6 +2061,167 @@ $libraryBlocks['iqos24-canales-de-comunicacion-3'] ='
             ]
         },';
 
+
+/** ----------------------------------------------------
+ *    START CRM 2026-04    Plantilla iqos-2024-v1.twig
+ *  -----------------------------------------------------
+ */
+$libraryBlocks['iqos24-columns-multirows'] ='
+        {
+            "type"      : "iq24-columns",
+            "font"      : "Cabin",
+            "msides"    : "0",
+            "mtop"      : "0",
+            "mbottom"   : "0",
+            "bgcolor"   : "transparent",
+            "this"      : "",
+            "columns"   :
+            [
+                {
+                    "coltype"       : "multirows",
+                    "bgcolor"       : "transparent",
+                    "vertical_align": "top",
+                    "param_info"    : "opciones vertical_align: top|middle|bottom",
+                    "bgimg"         : "",
+                    "width_pc"      : "100",
+                    "rows"          :
+                    [
+                        {
+                            "rowtype"   : "p",
+                            "bgcolor"   : "transparent",
+                            "mtop"      : "20",
+                            "mbottom"   : "5",
+                            "width_pc"  : "80",
+                            "texts"     :
+                            [   
+                                {
+                                    "txt"         : "Scourge of the seven seas scuttle cutlass league.",
+                                    "fontweight"  : "300",
+                                    "fontsize"    : "18",
+                                    "height"      : "22",
+                                    "txtclass"    : "txt_18",
+                                    "align"       : "center",
+                                    "color"       : "#34303d",
+                                    "this"        : "TXT | Turquesa: #00d1d2 | Slate: #34303d "
+                                }
+                            ]
+                        },
+                        {
+                            "rowtype"       : "spacer",
+                            "height"        : "20px",
+                            "bgcolor"       : "transparent"
+                        },
+                        {
+                            "rowtype"       : "pframed",
+                            "bgcolor"       : "transparent",
+                            "txt"           : "<b>Información importante:</b> Gregor Samsa woke from troubled dreams.",
+                            "fontweight"    : "300",
+                            "fontsize"      : "9",
+                            "height"        : "11",
+                            "txtclass"      : "txt_9",
+                            "align"         : "center",
+                            "width_pc"      : "90",
+                            "mtop"          : "5",
+                            "mbottom"       : "5",
+                            "color"         : "#000000",
+                            "framecolor"    : "#000000",
+                            "framebgcolor"  : "transparent",
+                            "framepadding"  : "5",
+                            "border"        : "1",
+                            "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d "
+                        },
+                        {
+                            "rowtype"  : "cta1_cta2",
+                            "bgcolor"  : "transparent",
+                            "mtop"     : "20",
+                            "mbottom"  : "0",
+                            "msides"   : "0",
+                            "cta"      : [
+                                {
+                                    "img"           : "btn.png",
+                                    "url"           : "#",
+                                    "img_width_pc"  : "80",
+                                    "align"         : "left"
+                                },
+                                {
+                                    "img"           : "btn.png",
+                                    "url"           : "#",
+                                    "img_width_pc"  : "80",
+                                    "align"         : "left"
+                                }
+                            ],
+
+                            "this"          : "CTA1 /CTA2"
+                        },
+                        {
+                            "README"        : "XXXXX (Referral_Code)",
+                            "rowtype"       : "pframed",
+                            "bgcolor"       : "transparent",
+                            "txt"           : "%%referral_code%%",
+                            "fontweight"    : "700",
+                            "fontsize"      : "16",
+                            "height"        : "22",
+                            "txtclass"      : "txt_16",
+                            "align"         : "center",
+                            "width_pc"      : "80",
+                            "mtop"          : "20",
+                            "mbottom"       : "0",
+                            "color"         : "#ffffff",
+                            "framecolor"    : "#ffffff",
+                            "framebgcolor"  : "transparent",
+                            "framepadding"  : "6",
+                            "border"        : "2",
+                            "this"          : ""
+                        },
+                        {
+                            "README"         : "COMPARTE TU CODIGO",
+                            "rowtype"       : "img",
+                            "img"           : "cta-compartir-codigo.png",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "15",
+                            "mbottom"       : "0",
+                            "width_pc"      : "80",
+                            "align"         : "center",
+
+                            "donde_codificar_la_siguiente url" : "https://www.urlencoder.org/",
+                            "url_ctaDECODED"       : "whatsapp://send?text=",
+
+                                                      
+                            "txt2Encode_ILUMA20pc" : "Te regalo 20% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+                            "txtEncoded_ILUMA20pc" : "Te%20regalo%2020%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
+                            "txt2Encode_ILUMA25pc" : "Te regalo 25% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+                            "txtEncoded_ILUMA25pc" : "Te%20regalo%2025%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
+                            "txt2Encode_ILUMA30pc" : "Te regalo 30% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+                            "txtEncoded_ILUMA30pc" : "Te%20regalo%2030%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
+                            "txt2Encode_ILUMA35pc" : "Te regalo 35% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar.",
+                            "txtEncoded_ILUMA35pc" : "Te%20regalo%2035%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA%2C%20exclusivo%20en%20iqos.com.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
+                            "url_NOK"       : " [whatsapp://send?text=] [https://web.whatsapp.com/send?text=]",
+                            "url_OK"        : "https://wa.me/?text=",
+                            "url"           : "https://wa.me/?text=Te%20regalo%2030%25%20de%20descuento%20en%20la%20compra%20de%20tu%20primer%20Kit%20IQOS%20ILUMA.%20No%20olvides%20utilizar%20mi%20c%C3%B3digo%20%25%25referral_code%25%25%20al%20comprar.",
+
+                            "THISIMG"        : "cta-compartir-codigo"
+                        },
+                        {
+                            "rowtype"       : "img",
+                            "img"           : "22.id-x.jpg",
+                            "bgcolor"       : "transparent",
+                            "mtop"          : "10",
+                            "mbottom"       : "0",
+                            "width_pc"      : "100",
+                            "align"         : "center",
+                            "url"           : "#",
+                            "THISIMG"       : "22.id-x"
+                        }
+                    ]
+                }
+            ]
+        },';
+
+
 /** ----------------------------------------------------
  *    START CRM 2025-10    Plantilla iqos-2024-v1.twig
  *  -----------------------------------------------------
@@ -2264,7 +3044,7 @@ $libraryBlocks['iqos24-columns'] ='
                             "texts"     :
                             [   
                                 {
-                                    "txt"         : "Scourge of the seven seas scuttle cutlass league.",
+                                    "txt"         : "Gregor Samsa woke from troubled dreams.",
                                     "fontweight"  : "300",
                                     "fontsize"    : "18",
                                     "height"      : "22",
@@ -2423,6 +3203,12 @@ $libraryBlocks['iqos24-spacer'] ='
             "height"      : "50",
             "bgcolor"     : "transparent"
         },';
+$libraryBlocks['iqos24-spacer20'] ='
+        {
+            "type"        : "iq24-spacer",
+            "height"      : "20",
+            "bgcolor"     : "transparent"
+        },';
 $libraryBlocks['iqos24-canales-de-comunicacion-2'] ='
         {
             "type"          : "iq24-p",
@@ -2556,7 +3342,7 @@ $libraryBlocks['iq26-footer-iqos'] ='
                 "txtIluma"   :  "IQOS ILUMA<sup>&trade;</sup> está diseñado para usarse únicamente con unidades de tabaco<br>SMARTCORE STICKS<sup>&trade;</sup>.<br><br>No utilice IQOS ILUMA<sup>&trade;</sup> y unidades de tabaco SMARTCORE STICKS<sup>&trade;</sup> con generaciones anteriores de IQOS<sup>&trade;</sup>, ya que esto puede causar daños a su dispositivo.<br><br>Más información en <a href=\"https://www.iqos.com/\" style=\"text-decoration:underline;\" target=\"_blank\">www.iqos.com</a>.",
                 "txtRisk"    :  "Este producto no es libre de riesgo, contiene nicotina<br> la cual es adictiva. Solo para adultos.",
                 "txtInfo"    :  "Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
-                "txtPrivacy" :  "Consulta nuestro aviso de privacidad con base en el cual son tratados tus datos personales <a href=\"https://www.pmiprivacy.com/es-la/consumer\" alias=\"footer_pmi_privacy\" style=\"text-decoration:underline;\" target=\"_blank\">aquí</a>.",
+                "txtPrivacy" :  "Consulta nuestro aviso de privacidad con base en el cual son tratados tus datos personales <a href=\"https://www.pmiprivacy.com/es-la/consumer\" alias=\"footer_pmi_privacy\" style=\"text-decoration:underline;\" target=\"_blank\">aquí</a>.<br><br>Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
                 "THIS"       :  "{LEGALES [ILUMA], Duty To Inform}"
             },
             "version"       :  "iqos-2024-v1.twig"
@@ -5141,6 +5927,158 @@ $libraryBlocks['undefined'] ='
 
 // Get the keys of array
 // print_r(array_keys($libraryBlocks));
+/*
+    Array
+    (
+        // IQOS Club (2026-04);          clubzero-2025-v1.twig
+            [0] => ic26-contactanos
+
+        // Together Club (2025-05) (Club Zero);     clubzero-2025-v1.twig
+            [1] => tc25-header
+            [2] => tc25-textbox-black
+            [3] => tc25-textbox-grey
+            [4] => tc25-textbox-gray-listbox-cta
+            [5] => tc25-dudas-contactanos
+            [6] => tc25-siguenos-rs
+            [7] => tc25-siguenos-rs-2
+            [8] => tc25-footer
+
+        // Club Zero  (2025-02);        clubzero-2025-v2.twig
+            [9] => cz25-header
+            [10] => cz25-greeting
+            [11] => cz25-redes-sociales
+            [12] => cz25-footer
+            [13] => cz25-copyright
+            [14] => cz25-p300
+            [15] => cz25-p700
+            [16] => cz25-table1
+            [17] => cz25-table2
+            [18] => cz25-table3
+            [19] => cz25-tableNN
+
+        // ZYN  (2024-10);      zyn-2025-v1.twig
+            [20] => zyn25-header-zyn
+            [21] => zyn25-footer
+            [22] => zyn25-greeting
+            [23] => zyn25-legales
+            [24] => zyn25-zyn-siguenos-ig
+            [25] => zyn25-zyn-find-your-zyn
+
+        // IQOS (2026-01);      iqos-2024-v1.twig
+            [26] => iqos24-canales-de-comunicacion-3
+
+        // IQOS (2025-10);      iqos-2024-v1.twig
+            [27] => iqos24-IQOS-Wallet
+            [28] => iqos24-columns-img-xxxxx-img
+            [29] => iqos24-img-sharemycode
+            [30] => iqos24-columns-multirows-img-img
+            [31] => iqos24-columns-multirows-img-greeting-img
+            [32] => iqos24-referralcode
+
+        // IQOS (2025-05);      iqos-2024-v1.twig
+            [33] => iqos24-columns-img-img-img
+            [34] => iqos24-columns-img-greeting-img
+            [35] => iqos24-columns-img-referralcode-img
+            [36] => iqos24-columns-multirows-img-img-img
+
+        // IQOS (2024-08);      iqos-2024-v1.twig
+            [37] => iqos24-header-iqos
+            [38] => iqos24-header-iqos-DARK
+            [39] => iqos24-center-img
+            [40] => iqos24-center-img-with-bgimg
+            [41] => iqos24-footer-iqos
+            [42] => iqos24-legales-iluma
+            [43] => iqos24-cta
+            [44] => iqos24-greeting
+            [45] => iqos24-greeting-with-bgimg
+            [46] => iq24-greeting-over-img
+            [47] => iqos24-p700
+            [48] => iqos24-p300
+            [49] => iqos24-columns
+            [50] => iqos24-spacer
+            [51] => iqos24-spacer20
+            [52] => iqos24-canales-de-comunicacion-2
+            [53] => iqos24-Tu-Equipo-IQOS
+            [54] => iq26-footer-iqos
+            [55] => iqos24-footer-iqos-forever-curious
+            [56] => iqos24-footer-iqos-forever-curious-DARK
+
+        // IQOS (2024-xx);      iqos-2024-v1.twig
+            [57] => header_mgm_tu_codigo_unico
+            [58] => get_iqos_wallet_app
+            [59] => IQOS-Wallet-Iluma-Gray
+            [60] => IQOS-Wallet-Iluma-Turquesa
+            [61] => get_iqos_wallet_app_turquoise
+            [62] => get_iqos_wallet_app_slate
+            [63] => img_Logo_Header_HTML
+            [64] => img_Cover_HTML
+
+        // IQOS (PRE 2024);      ???iqos-2024-v1.twig
+            [65] => header_brand_world
+            [66] => greeting_v2
+            [67] => p300_BW
+            [68] => p700_BW
+            [69] => cta1_v2
+            [70] => img
+            [71] => stageIMG
+            [72] => bloque_legales_iluma
+            [73] => legales-iluma
+            [74] => legales-terea
+            [75] => spacer
+            [76] => columns
+            [77] => spacer_v2
+            [78] => p_v2
+            [79] => pframed
+            [80] => canales_de_comunicacion
+            [81] => Tu_Equipo_IQOS
+            [82] => footer_bw_v1_lowercase
+
+        // LEGACY BLOCKS
+            [83] => p300
+            [84] => p700
+            [85] => greeting_negro
+            [86] => greeting_dorado
+            [87] => rawHTML
+            [88] => m_TXT_TXT_m
+            [89] => m_TXT_IMG_m
+            [90] => m_IMG_TXT_m
+            [91] => m_IMG_IMG_m
+            [92] => btn_sa_comprar_HTML
+            [93] => cta1
+            [94] => one_rs
+            [95] => two_rs
+            [96] => three_rs
+            [97] => sinfuego_sinhumo_sinceniza_negro_HTML
+            [98] => sinfuego_sinhumo_sinceniza_dorado_HTML
+            [99] => legal_extra
+            [100] => disclaimer_fsh
+            [101] => disclaimer_iqos
+            [102] => cols_33_33_33
+            [103] => form
+            [104] => form_v2
+            [105] => mgm_coupon_1
+            [106] => mgm_coupon_2cols
+            [107] => rgm_coupon_2cols
+            [108] => cta_share_WA_coupon
+            [109] => graylineframed
+            [110] => shopping_list
+            [111] => 3cols_chat_fb_phone
+            [112] => footer_brand_world
+            [113] => FSH_Yellow_Share
+            [114] => FSH_Yellow_Share_2
+            [115] => FSH_Framed_Card
+            [116] => ElijoIQOS
+            [117] => Solo_con_IQOS
+            [118] => Tu_equipo_IQOS
+            [119] => footer_bw_v1
+            [120] => footer_fsh
+            [121] => footer_bw_oos
+            [122] => footer_bw_oos_lowercase
+            [123] => undefined
+    )
+
+*/
+
 
 /** ----------------------------------------------------
  *    Plantilla zyn-2025-v1.twig

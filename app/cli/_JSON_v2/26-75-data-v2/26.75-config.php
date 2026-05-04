@@ -7,19 +7,20 @@ $p_yy =  '26';
 $p_mm =  '04';
 $p_dd =  '20';
 $p_name4folder =  'transaccionales';
-$p_name4json =  'cz-acreditacion-puntos';
+$p_name4json =  'ic-acreditacion-puntos';
 $p_name4folderDCE =  'NA';
-$p_mailname4DCE =  'CZ_Acreditación_puntos';
+$p_mailname4DCE =  'IC_Acreditación_puntos';
 $p_customerkey_DCE =  'NA';
 $p_name4folderFSH =  'NA';
-$p_mailname4FSH =  'CZ_Acreditación_puntos';
+$p_mailname4FSH =  'IC_Acreditación_puntos';
 $p_customerkey_FSH =  'NA';
 $id_FSH_folder =  'NA';
 
 
+
 //-----------------------------------------
 
-$companyBrand     = "cz";
+$companyBrand     = "ic";
 
 switch ( (string)$companyBrand ){
     case 'zyn':
@@ -27,7 +28,7 @@ switch ( (string)$companyBrand ){
         $TwigTemplate     = "zyn-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
-    case 'cz':
+    case 'ic':
         // $companyBrand  = "cz";
         $TwigTemplate     = "clubzero-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
@@ -45,42 +46,28 @@ switch ( (string)$companyBrand ){
 
 $requiredBlocks = array(
     "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
-    "iqos24-greeting",      // 
-    
-    "iqos24-center-img",    // 2
+    "iqos24-columns-multirows-img-greeting-img",// 1,2
+                                // Hemos abonado
+                                // [NÚMERO DE PUNTOS]
+                                // puntos a tu cuenta por haber
+                                // [nombre de la acción]
+    'iqos24-spacer', 
+
     "iqos24-center-img",    // 3
+
+    'cz25-p300', 
+                                // Ahora tienes en total
+                                // [NÚMERO TOTAL DE PUNTOS] puntos,
+                                // que podrías canjear por:​
+
+                                // TABLA PREMIOS PARA CANJE
+    'ic26-Row-TradePointsB',    //  R1 TablaCanjeB
+    'ic26-Row-TradePointsB',    //  R2 TablaCanjeB
+    'ic26-Row-TradePointsB',    //  R3 TablaCanjeB
+
     "iqos24-center-img",    // 4
 
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
-
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
-
-
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
-
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
-
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
-
-
-    'iqos24-spacer',
+    "ic26-contactanos",
     "iq26-footer-iqos",
     ""
 

@@ -7,19 +7,19 @@ $p_yy =  '26';
 $p_mm =  '04';
 $p_dd =  '20';
 $p_name4folder =  'transaccionales';
-$p_name4json =  'cz-mgm';
+$p_name4json =  'ic-mgm';
 $p_name4folderDCE =  'NA';
-$p_mailname4DCE =  'CZ_MGM';
+$p_mailname4DCE =  'IC_MGM';
 $p_customerkey_DCE =  'NA';
 $p_name4folderFSH =  'NA';
-$p_mailname4FSH =  'CZ_MGM';
+$p_mailname4FSH =  'IC_MGM';
 $p_customerkey_FSH =  'NA';
 $id_FSH_folder =  'NA';
 
 
 //-----------------------------------------
 
-$companyBrand     = "cz";
+$companyBrand     = "ic";
 
 switch ( (string)$companyBrand ){
     case 'zyn':
@@ -27,7 +27,7 @@ switch ( (string)$companyBrand ){
         $TwigTemplate     = "zyn-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
-    case 'cz':
+    case 'ic':
         // $companyBrand  = "cz";
         $TwigTemplate     = "clubzero-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
@@ -44,43 +44,29 @@ switch ( (string)$companyBrand ){
 //-----------------------------------------
 
 $requiredBlocks = array(
-    "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
-    "iqos24-greeting",      // 
-    
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
+    "iqos24-header-iqos",       // 
+    "iqos24-center-img",        // 1
+    "iqos24-greeting",          // 
+    'cz25-p700',                // 
+    'cz25-p300',                // Ya están cargados tus <span style=\"color:#00d1d2;font-weight:700;\">[PUNTOS CARGADOS]</span> puntos<br>en tu cuenta de <span style=\"color:#34303d;font-weight:700;\">IQOS Club</span> como<br>lo seleccionaste por <span style=\"color:#34303d;font-weight:700;\">recomendar IQOS <br>a tus amigos y familiares.</span>
 
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
-
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
-
-
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
-
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
-
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
-
-
+    "iqos24-columns-multirows-img-greeting-img",// 2,3 Invita a <span style=\"color:#00d1d2;font-weight:700;\">[nombre del referido]</span><br>a disfrutar de todos los beneficios <br>de <span style=\"color:#34303d;font-weight:700;\">IQOS Club,</span> creando su cuenta aquí
     'iqos24-spacer',
+
+    "iqos24-columns-multirows-img-greeting-img",// 4,5 ¡Tu acumulado es de<br><span style=\"color:#FFFFFF;font-weight:700;\">[puntos acumulados]</span><br>puntos!
+    'iqos24-spacer',
+
+    'cz25-p300',                // <span style=\"color:#34303d;font-weight:700;\">Haz crecer tu círculo,</span> comparte experiencias <br>únicas y disfruta. ¡Juntos, la recompensa<br>es mayor! Podrías ganar:
+
+
+                                // TABLA PREMIOS PARA CANJE
+    "ic26-Row-TradePointsC",    // R1 TablaCanjeC
+    "ic26-Row-TradePointsC",    // R2 TablaCanjeC
+    "ic26-Row-TradePointsC",    // R3 TablaCanjeC
+
+    "iqos24-center-img",        // 6
+
+    "ic26-contactanos",
     "iq26-footer-iqos",
     ""
 
@@ -88,6 +74,13 @@ $requiredBlocks = array(
 
 // MODULOS PARA TEMPLATE iqos-2024-v1.twig
 $requiredBlocks__IQOS = array(
+
+    "ic26-Row-TradePointsA",    // 26.73
+    "ic26-Row-TradePointsB",    // 26.75, 26.76
+    "ic26-Row-TradePointsC",    // 26.77, 26.79
+
+
+
     "iqos24-footer-iqos-forever-curious",
     "iqos24-header-iqos-DARK",
     "iqos24-footer-iqos-forever-curious-DARK",

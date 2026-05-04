@@ -7,19 +7,19 @@ $p_yy =  '26';
 $p_mm =  '04';
 $p_dd =  '20';
 $p_name4folder =  'transaccionales';
-$p_name4json =  'cz-reciclaje​';
+$p_name4json =  'ic-ganaste-evento';
 $p_name4folderDCE =  'NA';
-$p_mailname4DCE =  'CZ_Reciclaje​';
+$p_mailname4DCE =  'IC_Ganaste_Evento';
 $p_customerkey_DCE =  'NA';
 $p_name4folderFSH =  'NA';
-$p_mailname4FSH =  'CZ_Reciclaje​';
+$p_mailname4FSH =  'IC_Ganaste_Evento';
 $p_customerkey_FSH =  'NA';
 $id_FSH_folder =  'NA';
 
 
 //-----------------------------------------
 
-$companyBrand     = "cz";
+$companyBrand     = "ic";
 
 switch ( (string)$companyBrand ){
     case 'zyn':
@@ -29,6 +29,11 @@ switch ( (string)$companyBrand ){
         break;
     case 'cz':
         // $companyBrand  = "cz";
+        $TwigTemplate     = "clubzero-2025-v1.twig";
+        $bgColor          = "#FFFFFF";    // Don't use "transparent"
+        break;
+    case 'ic':
+        // $companyBrand  = "ic";
         $TwigTemplate     = "clubzero-2025-v1.twig";
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
@@ -43,7 +48,28 @@ switch ( (string)$companyBrand ){
 
 //-----------------------------------------
 
+
 $requiredBlocks = array(
+    "iqos24-header-iqos",   // 
+    "iqos24-center-img",    // 1
+    "ic26-greeting",        // 
+    'ic26-p700',            // ¡Lo lograste! 
+    'ic26-p300',            // Gracias a tu participación,<br><span style=\"font-weight:700;\">tienes un acceso gratis al evento.</span>
+    "iqos24-center-img",    // 2
+    'iqos24-columns',       // 3
+    //Aquí te dejamos los <br>detalles para que <br>disfrutes al máximo:
+    //<span style=\"font-weight:700;\">Evento:</span> [XXX]<br><span style=\"font-weight:700;\">Fecha:</span> [XXX]<br><span style=\"font-weight:700;\">Hora:</span> [XXX]<br><span style=\"font-weight:700;\">Ubicación:</span> [XXX]
+
+    "iqos24-center-img",    // 4
+    "iqos24-center-img",    // 5
+
+    /////////////////////////////////////////////
+    "ic26-contactanos",
+    "iq26-footer-iqos",
+    ""
+);
+
+$requiredBlocks2025 = array(
     "iqos24-header-iqos",   // 
     "iqos24-center-img",    // 1
     "iqos24-greeting",      // 
@@ -85,7 +111,6 @@ $requiredBlocks = array(
     ""
 
 );
-
 // MODULOS PARA TEMPLATE iqos-2024-v1.twig
 $requiredBlocks__IQOS = array(
     "iqos24-footer-iqos-forever-curious",
@@ -162,8 +187,47 @@ $requiredBlocks__ZYN = array(
     "zyn25-footer",
     ""
 );
+// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [IQOS CLUB]
+$requiredBlocks_ic = array(
+    "iqos24-header-iqos",   // 
+    "iqos24-center-img",    // 1
+    "ic26-greeting",        // 
+    
+    "iqos24-center-img",    // 2
+    "iqos24-center-img",    // 3
+    "iqos24-center-img",    // 4
+    "iqos24-center-img",    // 5
+    "iqos24-center-img",    // 6
+    "iqos24-center-img",    // 7
+    "iqos24-center-img",    // 8
+    "iqos24-center-img",    // 9
+
+    "ic26-Row-TradePointsA",    // 26.73
+    "ic26-Row-TradePointsB",    // 26.75, 26.76
+    "ic26-Row-TradePointsC",    // 26.77, 26.79
+    "ic26-columns-multirows-img-txt-img",//
+
+    'ic26-p300',            // 
+    'ic26-p700',            // 
 
 
+    'iqos24-columns',       // 
+    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
+    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
+    "iqos24-columns-multirows-img-img-img", //
+    "iqos24-columns-multirows-img-greeting-img",//
+    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
+    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
+
+    "tc25-textbox-black",
+    "tc25-textbox-grey",
+    "tc25-textbox-gray-listbox-cta",
+
+    /////////////////////////////////////////////
+    "ic26-contactanos",
+    "iq26-footer-iqos",
+    ""
+);
 
 
 /*
