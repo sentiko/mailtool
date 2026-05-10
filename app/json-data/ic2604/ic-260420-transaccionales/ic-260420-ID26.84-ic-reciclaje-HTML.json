@@ -50,7 +50,7 @@
     "PREHEADER"        :   "",
     "content_bgcolor"  :   "#FFFFFF",
     
-    "blocks" : 
+    "BloquesDesechados":
     [
         {
             "type"          :  "iq24-center-img",
@@ -65,11 +65,17 @@
             "this"          :  "IMG header IQOS New Brand World",
             "version"       :  "iqos-2024-v1.twig"
         },
+        {}
+
+    ],
+
+    "blocks" : 
+    [
         {
             "type"      : "iq24-columns",
             "font"      : "Cabin",
             "msides"    : "4.3",
-            "mtop"      : "0",
+            "mtop"      : "50",
             "mbottom"   : "0",
             "bgcolor"   : "transparent",
             "this"      : "",
@@ -87,6 +93,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "26.84-1b.jpg",
+                            "alt"           : "En IQOS ZYN Club cuidar el planeta tambien suma.",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -118,6 +125,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "26.84-2b.jpg",
+                            "alt"           : "Cada vez que reciclas tus consumibles y dispositivos usados, acumulas puntos que puedes canjear por recompensas increíbles.",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -168,7 +176,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.84-4c.jpg",
-            "alt"           :  "",
+            "alt"           :  "¿Cómo se hace? Visita tu tienda IQOS y solicita tu servicio de reciclaje. 1- Recolecta y entrega en bolsas tus unidades de tabaco para calentar usadas. Recibe un máximo de 150 puntos por mes al entregar tus bolsas. 2- Lleva tus dispositivos IQOS que ya no uses.* Puedes entregar hasta 3 por año. Nuestro equipo se encargará del resto.",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
@@ -200,7 +208,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.84-5.jpg",
-            "alt"           :  "",
+            "alt"           :  "Entrega TEREA: 150 puntos | Dispositivos usados: 50 puntos",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "20",
@@ -213,7 +221,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.84-6b.jpg",
-            "alt"           :  "",
+            "alt"           :  "Dale un nuevo propósito a lo que ya no usas y contribuye al bienestar de nuestro mundo.",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "20",
@@ -226,7 +234,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.84-7.jpg",
-            "alt"           :  "",
+            "alt"           :  "Localizar Tienda",
             "url"           :  "#LINK",
             "alias"         :  "",
             "mtop"          :  "30",
@@ -238,7 +246,7 @@
 
 
         {   "SECCION"       : "¿TIENES DUDAS? ¡CONTACTANOS!"},
-            {
+        {
             "type"          : "cz25-p",
             "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
@@ -285,6 +293,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-llamanos.png",
+                            "alt"           : "Llámanos",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -296,6 +305,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-mail.png",
+                            "alt"           : "email",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -324,6 +334,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-sms.png",
+                            "alt"           : "sms",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -335,6 +346,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-faq.png",
+                            "alt"           : "FAQ",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -359,6 +371,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "contacto-ig.png",
+                    "alt"           : "Instagram",
                     "url"           : "https://www.instagram.com/iqos_mx/",
                     "this"          : "IMG contacto-ig"
                 },

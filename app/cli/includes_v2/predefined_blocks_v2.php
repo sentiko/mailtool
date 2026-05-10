@@ -181,6 +181,7 @@ $libraryBlocks['ic26-contactanos'] ='
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-llamanos.png",
+                            "alt"           : "llámanos",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -192,6 +193,7 @@ $libraryBlocks['ic26-contactanos'] ='
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-mail.png",
+                            "alt"           : "email",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -220,6 +222,7 @@ $libraryBlocks['ic26-contactanos'] ='
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-sms.png",
+                            "alt"           : "sms",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -231,6 +234,7 @@ $libraryBlocks['ic26-contactanos'] ='
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-faq.png",
+                            "alt"           : "FAQ",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -255,6 +259,7 @@ $libraryBlocks['ic26-contactanos'] ='
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "contacto-ig.png",
+                    "alt"           : "Instagram",
                     "url"           : "https://www.instagram.com/iqos_mx/",
                     "this"          : "IMG contacto-ig"
                 },

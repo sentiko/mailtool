@@ -50,7 +50,7 @@
     "PREHEADER"        :   "",
     "content_bgcolor"  :   "#FFFFFF",
     
-    "blocks" : 
+    "BloquesDesechados":
     [
         {
             "type"          :  "iq24-center-img",
@@ -65,14 +65,20 @@
             "this"          :  "IMG header IQOS New Brand World",
             "version"       :  "iqos-2024-v1.twig"
         },
+        {}
+
+    ],
+
+    "blocks" : 
+    [
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.92-1b.jpg",
-            "alt"           :  "",
+            "alt"           :  "¡Tu nueva contraseña está lista!",
             "url"           :  "#",
             "alias"         :  "",
-            "mtop"          :  "0",
+            "mtop"          :  "50",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
             "this"          :  "IMG 26.92-1b",
@@ -218,7 +224,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.92-4.jpg",
-            "alt"           :  "",
+            "alt"           :  "Contactar a soporte",
             "url"           :  "#LINK",
             "alias"         :  "",
             "mtop"          :  "0",
@@ -232,7 +238,7 @@
 
 
         {   "SECCION"       : "¿TIENES DUDAS? ¡CONTACTANOS!"},
-            {
+        {
             "type"          : "cz25-p",
             "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
@@ -279,6 +285,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-llamanos.png",
+                            "alt"           : "Llámanos",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -290,6 +297,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-mail.png",
+                            "alt"           : "email",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -318,6 +326,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-sms.png",
+                            "alt"           : "sms",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -329,6 +338,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-faq.png",
+                            "alt"           : "FAQ",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -353,6 +363,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "contacto-ig.png",
+                    "alt"           : "Instagram",
                     "url"           : "https://www.instagram.com/iqos_mx/",
                     "this"          : "IMG contacto-ig"
                 },

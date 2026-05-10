@@ -50,7 +50,7 @@
     "PREHEADER"        :   "",
     "content_bgcolor"  :   "#FFFFFF",
     
-    "blocks" : 
+    "BloquesDesechados":
     [
         {
             "type"          :  "iq24-center-img",
@@ -65,14 +65,20 @@
             "this"          :  "IMG header IQOS New Brand World",
             "version"       :  "iqos-2024-v1.twig"
         },
+        {}
+
+    ],
+
+    "blocks" : 
+    [
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.73-1b.jpg",
-            "alt"           :  "",
+            "alt"           :  "El canje de tus puntos fue exitoso",
             "url"           :  "#",
             "alias"         :  "",
-            "mtop"          :  "0",
+            "mtop"          :  "50",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
             "this"          :  "IMG 26.73-1b",
@@ -90,7 +96,7 @@
         },
         {
             "type"          : "cz25-p",
-            "font"          : "'ClubZero', Gotham, 'Gabarito', 'Noto Sans'",
+            "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
             "fontsize"      : "22",
             "height"        : "26",
@@ -170,6 +176,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "imagen-premio.png",
+                    "alt"           : "[imagen de premio]",
                     "url"           : "#",
                     "this"          : "IMG imagen-premio"
                 },
@@ -241,6 +248,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "imagen-premio.png",
+                    "alt"           : "[imagen de premio]",
                     "url"           : "#",
                     "this"          : "IMG imagen-premio"
                 },
@@ -312,6 +320,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "imagen-premio.png",
+                    "alt"           : "[imagen de premio]",
                     "url"           : "#",
                     "this"          : "IMG imagen-premio"
                 },
@@ -465,7 +474,7 @@
 
         {
             "type"          : "cz25-p",
-            "font"          : "'ClubZero', Gotham, 'Gabarito', 'Noto Sans'",
+            "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
             "fontsize"      : "22",
             "height"        : "26",
@@ -484,7 +493,7 @@
         },
         {
             "type"          : "cz25-p",            
-            "font"          : "'ClubZero', Gotham, 'Gabarito', 'Noto Sans'",
+            "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "700",
             "fontsize"      : "36",
             "height"        : "36",
@@ -503,7 +512,7 @@
         },
         {
             "type"          : "cz25-p",
-            "font"          : "'ClubZero', Gotham, 'Gabarito', 'Noto Sans'",
+            "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
             "fontsize"      : "22",
             "height"        : "26",
@@ -527,7 +536,7 @@
         {   "this"          :  "TABLA ACTIVIDADES - PUNTOS"},
         {
             "type"          : "cz25-table1",
-            "font"          : "'ClubZero', Gotham, 'Gabarito', 'Noto Sans'",
+            "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
             "cellpadding"   : "8",
             "fontsize"      : "18",
@@ -566,7 +575,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.73-5b.jpg",
-            "alt"           :  "",
+            "alt"           :  "¡Recuerda! Solo con IQOS | ZYN Club podrás disfrutar de las mejores recompensas, acumular puntos y ganar.",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "0",
@@ -627,6 +636,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-llamanos.png",
+                            "alt"           : "Llámanos",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -638,6 +648,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-mail.png",
+                            "alt"           : "email",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -666,6 +677,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-sms.png",
+                            "alt"           : "sms",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -677,6 +689,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-faq.png",
+                            "alt"           : "FAQ",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -701,6 +714,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "contacto-ig.png",
+                    "alt"           : "Instagram",
                     "url"           : "https://www.instagram.com/iqos_mx/",
                     "this"          : "IMG contacto-ig"
                 },

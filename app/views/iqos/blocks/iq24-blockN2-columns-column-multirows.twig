@@ -15,7 +15,7 @@
                                                               <th valign="top" style="text-align:left;font-size:1px;line-height:1px" class="horizontal-gutter" height="{{blocks[index].columns[idx].mtop}}">&nbsp;</th>
                                                             </tr>{% endif ~%}
                                                             {%- for idxrow in blocks[index].columns[idx].rows|keys ~%}
-                                                            <!-- N2multirow {{blocks[index].columns[idx].rows[idxrow].rowtype}}  -->
+                                                            <!-- N2multirow rowtype:{{blocks[index].columns[idx].rows[idxrow].rowtype}}  -->
                                                             <tr pik-inner-element="column-{{idx}}-[multirows-row-{{idxrow}}:{{blocks[index].columns[idx].rows[idxrow].rowtype}}]">
                                                               <th>
                                                                 {%- if blocks[index].columns[idx].rows[idxrow].rowtype == "img" -%}                             {#~ multirow - row img  ~#}

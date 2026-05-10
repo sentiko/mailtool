@@ -7,6 +7,14 @@
  
 #}
 {%- block iq24_column_img ~%}
+{% if blocks[index].columns[idx].alt is not defined %}
+    {% set imgALT = "." %}
+{% else %}
+    {% set imgALT  = blocks[index].columns[idx].alt %}
+{% endif %}
+{% if imgALT == "" %}
+    {% set imgALT = "." %}
+{% endif %}
                                                       {# ~#}<!--N2img-->
                                                       <th pik-th-descriptor="column-{{idx}}-[img]" valign="top"  style="text-align:center; background-color:{{blocks[index].columns[idx].bgcolor}}"  align="center"  width="{{blocks[index].columns[idx].width_pc}}%">
                                                         <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="min-width:100%;" role="presentation">
@@ -16,7 +24,7 @@
                                                             </tr>{% endif ~%}
                                                             <tr pik-inner-element="img">
                                                               <th>
-                                                                {% if blocks[index].columns[idx].url is defined and blocks[index].columns[idx].url != "#" %}<a href="{{blocks[index].columns[idx].url}}" target="_blank">{% endif %}<img src="{{BaseURLimg}}{{blocks[index].columns[idx].img}}"  width="{{blocks[index].columns[idx].img_width_pc}}%"  height="auto"  align="center"  alt=""  style="width:{{blocks[index].columns[idx].img_width_pc}}%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border: none; display: block; margin-left:auto; margin-right:auto; line-height:0; font-size:0; ">{%- if blocks[index].columns[idx].url is defined and blocks[index].columns[idx].url != "#" %}</a>{% endif ~%}
+                                                                {% if blocks[index].columns[idx].url is defined and blocks[index].columns[idx].url != "#" %}<a href="{{blocks[index].columns[idx].url}}" target="_blank">{% endif %}<img src="{{BaseURLimg}}{{blocks[index].columns[idx].img}}" alt="{{imgALT}}" width="{{blocks[index].columns[idx].img_width_pc}}%"  height="auto"  align="center"  style="width:{{blocks[index].columns[idx].img_width_pc}}%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border: none; display: block; margin-left:auto; margin-right:auto; line-height:0; font-size:0; ">{%- if blocks[index].columns[idx].url is defined and blocks[index].columns[idx].url != "#" %}</a>{% endif ~%}
                                                               </th>
                                                             </tr>{% if blocks[index].columns[idx].mbottom != 0 ~%}
                                                             <tr pik-inner-element="img-margin-bottom">

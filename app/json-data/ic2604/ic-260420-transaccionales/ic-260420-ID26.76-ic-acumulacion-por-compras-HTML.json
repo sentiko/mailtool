@@ -50,7 +50,7 @@
     "PREHEADER"        :   "",
     "content_bgcolor"  :   "#FFFFFF",
     
-    "blocks" : 
+    "BloquesDesechados":
     [
         {
             "type"          :  "iq24-center-img",
@@ -65,14 +65,20 @@
             "this"          :  "IMG header IQOS New Brand World",
             "version"       :  "iqos-2024-v1.twig"
         },
+        {}
+
+    ],
+
+    "blocks" : 
+    [
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.76-1b.jpg",
-            "alt"           :  "",
+            "alt"           :  "Con IQOS | ZYN Club, ¡Tus compras siempre te dan puntos!",
             "url"           :  "#",
             "alias"         :  "",
-            "mtop"          :  "0",
+            "mtop"          :  "50",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
             "this"          :  "IMG 26.76-1b",
@@ -96,7 +102,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.76-5.jpg",
-            "alt"           :  "",
+            "alt"           :  "Por ser parte de IQOS | ZYN Club tu compra te dio:",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "40",
@@ -294,7 +300,7 @@
         },
         {
             "type"          : "cz25-p",
-            "font"          : "'ClubZero', Gotham, 'Gabarito', 'Noto Sans'",
+            "font"          : "Gotham, 'Gabarito', 'Noto Sans'",
             "fontweight"    : "300",
             "fontsize"      : "26",
             "height"        : "26",
@@ -370,6 +376,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "imagen-del-premio.png",
+                    "alt"           : "[imagen del premio]",
                     "url"           : "#",
                     "this"          : "IMG imagen-del-premio"
                 },
@@ -468,6 +475,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "imagen-del-premio.png",
+                    "alt"           : "[imagen del premio]",
                     "url"           : "#",
                     "this"          : "IMG imagen-del-premio"
                 },
@@ -566,6 +574,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "imagen-del-premio.png",
+                    "alt"           : "[imagen del premio]",
                     "url"           : "#",
                     "this"          : "IMG imagen-del-premio"
                 },
@@ -615,7 +624,7 @@
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
             "img"           :  "26.76-4.jpg",
-            "alt"           :  "",
+            "alt"           :  "¡Recuerda! Al ser miembro y adquirir tus artículos favoritos, ganas puntos canjeables por recompensas exclusivas.",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "40",
@@ -673,6 +682,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-llamanos.png",
+                            "alt"           : "Llámanos",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -684,6 +694,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-mail.png",
+                            "alt"           : "email",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -712,6 +723,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-sms.png",
+                            "alt"           : "sms",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -723,6 +735,7 @@
                         {
                             "rowtype"       : "img",
                             "img"           : "contacto-faq.png",
+                            "alt"           : "FAQ",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
@@ -747,6 +760,7 @@
                     "mtop"          : "0",
                     "mbottom"       : "0",
                     "img"           : "contacto-ig.png",
+                    "alt"           : "Instagram",
                     "url"           : "https://www.instagram.com/iqos_mx/",
                     "this"          : "IMG contacto-ig"
                 },
