@@ -125,14 +125,14 @@
         {
             "type"          :  "iq24-center-img",
             "bgcolor"       :  "transparent",
-            "img"           :  "26.z11-4.gif",
+            "img"           :  "26.z11-4b.gif",
             "alt"           :  "",
             "url"           :  "#",
             "alias"         :  "",
             "mtop"          :  "30",
             "mbottom"       :  "0",
             "width_pc"      :  "100",
-            "this"          :  "IMG 26.z11-4",
+            "this"          :  "IMG 26.z11-4b",
             "version"       :  "iqos-2024-v1.twig"
         },
         {
@@ -169,14 +169,14 @@
                     [
                         {
                             "rowtype"       : "img",
-                            "img"           : "26.z11-6.jpg",
+                            "img"           : "26.z11-6b.jpg",
                             "bgcolor"       : "transparent",
                             "mtop"          : "0",
                             "mbottom"       : "0",
                             "width_pc"      : "100",
                             "align"         : "center",
                             "url"           : "#",
-                            "THISIMG"       : "26.z11-6"
+                            "THISIMG"       : "26.z11-6b"
                         },
                         {
                             "rowtype"       : "img",
