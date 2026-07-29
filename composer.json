@@ -1,6 +1,6 @@
 {
     "require": {
-        "twig/twig": "3.11.2",
+        "twig/twig": "3.27.0",
         "klein/klein": "^2.1"
     },
     "autoload": {
@@ -9,6 +9,6 @@
         ]
     },
     "comment": {
-        "twig/twig": "^2.16.1"
+        "twig/twig": "[2026-07-29] actualizado a version 3.27.0"
     }
 }
