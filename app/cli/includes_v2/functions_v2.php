@@ -3,87 +3,61 @@
 define("WK_ROOT"   , dirname(dirname(dirname(dirname(__FILE__))))   );
 
 
-// Usado por : mk_fork.php
+
+/**
+ *  Muestra en la consola una variable y aborta la aplicacion
+ *               \033[31m       RED    \033[0m
+ *               \033[1;37;44m  BLUE   \033[0m
+ *               \033[1;37;44m█████████\033[0m
+ *               \033[1;37;41m ERROR: \033[0m
+ */
+function displayVar($var, $filename, $line)
+{
+   echo PHP_EOL . "\033[1;37;44m      FILE      \033[0m   " . $filename . 
+        PHP_EOL . "\033[1;37;44m      LINE      \033[0m   " . $line . 
+        PHP_EOL . PHP_EOL;
+   var_export($var); echo PHP_EOL.PHP_EOL ;die;
+}
+
+/**
+ *  Aborta la aplicacion y muestra un mensaje
+ */
+function abort($msg=NULL, $filename=NULL, $line=NULL)
+{
+    if($msg)
+        echo PHP_EOL."\033[1;37;41m      ERROR:      \033[0m ". $msg ;
+    if($filename)
+        echo PHP_EOL."Originado en : ". basename($filename);
+    if($line && $filename)
+        echo " (". $line . ")";
+    
+    echo PHP_EOL.PHP_EOL;
+    die;
+}
+
+
+/**
+ *  Recupera el año en curso en 2 digitos
+ */
 function getYear()
 {
-    // return "23";
+    // Ej. return "26";
     return date("y");   // "y": 2 digitos; "Y": 4 digitos
 }
 
-// no se usa ?
-function blockreplace($replacementsfile, $inputfile, $source, $target)
-{    
 
-    $value_old = array();
-    $value_new = array();
-
-    $dataA  = file_get_contents("includes_v2/library-replacements_v2.json");
-    $a1     = json_decode($dataA, true);
-
-    $dataB  = file_get_contents($replacementsfile);
-    $a2     = json_decode($dataB, true);
-
-    $a = array_merge($a1, $a2);
-
-    foreach ($a['replacements'] as $b) {
-        $value_old[] = $b[$source];
-        $value_new[] = $b[$target];
-    }
-    $data  = file_get_contents($inputfile);
-    $data1 = str_replace( $value_old, $value_new, $data);
-    return $data1; 
-}
-
-// usado en versiones previas
-function blockreplace_v2($filename, $replacementsfile, $source, $target, $vars )
-{    
-    $value_old = array();
-    $value_new = array();
-
-
-    $dataA  = file_get_contents("includes_v2/library-replacements_v2.json");
-    $a1     = json_decode($dataA, true);
-    if (!$a1) abort("\033[1;37;41m ERROR: \033[0m includes_v2/library-replacements_v2.json no entrega datos. Revisar sintaxis.");
-    // echo var_export($a1,true); die;
-
-    $dataB  = file_get_contents($replacementsfile);
-    $a2     = json_decode($dataB, true);
-    if (!$a2) abort("\033[1;37;41m ERROR: \033[0m $replacementsfile no entrega datos. Revisar sintaxis.");
-    // echo var_export($a2,true); die;
-
-    $a = array_merge($a2['replacements'], $a1['replacements']);
-    // echo var_export($a2,true); die;
-
-    foreach ($a as $b) {
-        $value_old[] = $b[$source];
-        $value_new[] = $b[$target];
-    }
-    // echo var_export($value_new,true); die;
-    // echo var_export($value_old,true); die;
-
-    $inputfile = getInputFileName($filename , $source);
-    $f         = './../json-data/' . $vars['mes']. '/' .$vars['folder']. '/' . $inputfile . '.json';
-
-    if ( $source == "DCE" || $source == "FSH")
-    {
-        $rawdata  = file_get_contents($f);
-        $rawdata1 = str_replace( $value_old, $value_new, $rawdata);    
-        $a0       = json_decode($rawdata1, true);
-        // echo var_export($a0 ,true); die;
-        $b0       = json_encode($a0['blocks'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-        $data1    = "
-    \"blocks\" : \n    ".str_replace("\n" , "\n    ", $b0) . ",\n";
-    }
-    else{
-        $data      = getOriginalBlocks($f);
-        $data1     = str_replace( $value_old, $value_new, $data);    
-    }
-    // echo var_export($data1,true); die;
-    return $data1; 
-}
-
-// Usado por : mk_fork.php
-//     update: 2024-10 : seleccion de strings de reemplazo dependiendo de la marca.
+/**
+ *  Reemplaza informacion en el arreglo blocks 
+ * 
+ *  Usado por : 
+ *      mk_crm.php
+ *      mk_fork.php           
+ * 
+ *  Historia:
+ *      2026-10 : si las marcas no son pmi o zyn elimina la necesidad de buscar el bloque de reemplazos de default
+ *      2024-10 : seleccion de strings de reemplazo dependiendo de la marca.
+ * 
+*/
 function blockreplace_v3($target, $vars )
 {    
     $value_old = array();
@@ -91,32 +65,36 @@ function blockreplace_v3($target, $vars )
 
     $source  = "HTML"; 
 
-    $dataA  = file_get_contents("includes_v2/library-replacements_v2.json");
-    $a0     = json_decode($dataA, true);
-    if (!$a0) abort("\033[1;37;41m ERROR: \033[0m includes_v2/library-replacements_v2.json no entrega datos. Revisar sintaxis.");
-    // echo var_export($a1,true); die;
+    if ( $vars['brand'] == "zyn" || $vars['brand'] == "pmi" ){
+        $dataA  = file_get_contents("includes_v2/library-replacements_v2.json");
+        $a0     = json_decode($dataA, true);
+        if (!$a0) abort("includes_v2/library-replacements_v2.json no entrega datos. Revisar sintaxis.");
+                    // DEBUG
+                    // displayVar($a0, __FILE__ , __LINE__ );
 
-    $found = -1;
-    for( $i=0 ; $i < sizeof($a0['replacements'])  ; $i++ )
-    {
-        if ($a0['replacements'][$i]['brand'] ==  $vars['brand'])
+        $found = -1;
+        for( $i=0 ; $i < sizeof($a0['replacements'])  ; $i++ )
         {
-            $found = $i ;
-            break;
+            if ($a0['replacements'][$i]['brand'] ==  $vars['brand'])
+            {
+                $found = $i ;
+                break;
+            }
         }
+        $index = ( $found == -1)? 0 : $found;  // Si no encuentra la marca, usa por default pmi 
+            // DEBUG
+            // displayVar($vars,  __FILE__ , __LINE__ );
+            // displayVar($a0['replacements'][$i]['strings'],  __FILE__ , __LINE__ );
+        $a1    = $a0['replacements'][$i]['strings'];
     }
-    $index = ( $found == -1)? 0 : $found;  // Si no encuentra la marca, usa por default iqos
-    // echo var_export($vars,true); die;
-    // echo var_export($a0['replacements'][$i]['strings'] , true); die;
-    $a1 = $a0['replacements'][$i]['strings'];
 
-
-    $dataB  = file_get_contents($vars['replacementsfile']);
-    $a2     = json_decode($dataB, true);
-    if (!$a2) abort("\033[1;37;41m ERROR: \033[0m". $vars['replacementsfile'] . " no entrega datos. Revisar sintaxis.");
-
-    // echo var_export($a1,true); die;
-    // echo var_export($a2,true);
+    $dataB = file_get_contents($vars['replacementsfile']);
+    $a2    = json_decode($dataB, true);
+    if (!$a2) 
+        abort( $vars['replacementsfile'] . " no entrega datos. Revisar sintaxis.", __FILE__, __LINE__ );
+        // DEBUG
+        // displayVar($a1,  __FILE__ , __LINE__ );
+        // displayVar($a2,  __FILE__ , __LINE__ );
     
     if ( isset($a2['replacements']) )
     {
@@ -137,21 +115,29 @@ function blockreplace_v3($target, $vars )
         }
     }
 
-    $a = array_merge($a2['replacements'], $a1);
-    // echo var_export($a,true); die;
-
-
+    if ( $vars['brand'] == "zyn" || $vars['brand'] == "pmi" ){
+        $a = array_merge($a2['replacements'], $a1);    // merge replacement file and default replacements
+    }
+    else{
+        $a = $a2['replacements'];    // nothing to merge, use only the replacement file
+    }
+        // DEBUG
+        // displayVar($a, __FILE__ , __LINE__ );
     foreach ($a as $b) {
         $value_old[] = $b[$source];     // ERROR: Undefined index: HTML in /Users/armandoromero/Documents/devF1/mailtool.lan/app/cli/includes_v2/functions_v2.php on line 101
         $value_new[] = $b[$target];     // ERROR: Undefined index: FSH in /Users/armandoromero/Documents/devF1/mailtool.lan/app/cli/includes_v2/functions_v2.php on line 102
     }
-    // echo var_export($value_new,true); die;
-    // echo var_export($value_old,true); die;
+        // DEBUG
+        // echo var_export($value_new,true); echo PHP_EOL; echo var_export($value_old,true); PHP_EOL;  die;
 
     $inputfile = getInputFileName($vars['filename'] , $source);
-    // $f         = './../json-data/' . $vars['mes']. '/' .$vars['folder']. '/' . $inputfile . '.json';
-    $f         = dirname(dirname( dirname(__FILE__) )) . "/json-data/" 
-                 . $vars['mes']. '/' .$vars['folder']. '/' . $inputfile . '.json';
+    $f = dirname(dirname( dirname(__FILE__) )) 
+        . "/json-data/" 
+        . $vars['mes']    . '/' 
+        . $vars['folder'] . '/' 
+        . $inputfile      
+        . '.json';
+
     if ( !file_exists( $f )){
         echo "\n\033[1;37;41m ERROR: \033[0m"  
         ."\033[1;m EL ARCHIVO \n\033[31m████████\033[0m " . $f . "\n\033[31m████████\033[0m NO EXISTE "
@@ -167,8 +153,7 @@ function blockreplace_v3($target, $vars )
         $a0       = json_decode($rawdata1, true);
         // echo var_export($a0 ,true); die;
         $b0       = json_encode($a0['blocks'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-        $data1    = "
-    \"blocks\" : \n    ".str_replace("\n" , "\n    ", $b0) . ",\n";
+        $data1    = "\n    \"blocks\" : \n    ".str_replace("\n" , "\n    ", $b0) . ",\n";
     }
     else{
         $data      = getOriginalBlocks($f);
@@ -185,6 +170,9 @@ function blockreplace_v3($target, $vars )
  * returns this replacement:
  *      pmi-200525-20.94-Lending-AB-test-try-benefits-2-HTML
  *
+ * 
+ *  Internal function used in this file
+ * 
  */
 function getInputFileName($filename, $source)
 {
@@ -212,7 +200,12 @@ function getOriginalBlocks($f)
 
 // =========================================================================
 // Usado por : mk_fork.php
+//           : mk_crm.php
 // update 2024-10: agregar el brand al set de varibles para incorporar a ZYN
+// update 2026-10: agregar mobileclasses al set de variables
+// --------
+// arguments : archivo JSON con variables de inicializacion (YY.ID-config.php)
+// target    : FSH, DCE
 // =========================================================================
 function createEnvironment2($arguments, $target)
 {
@@ -233,8 +226,6 @@ function createEnvironment2($arguments, $target)
     
     $a['subject']         = trim($p_subject);
     $a['preheader']       = trim($p_preheader);
-
-
 
     $path_DCE         = "Content Builder > Mexico > Commercial > MX_20" .$p_yy.$p_mm.$p_dd.  "_" . $p_name4folderDCE ." > 01_HTML";
     $name_in_DCE      = $p_mailname4DCE;
@@ -351,7 +342,7 @@ function create_environment($mes, $folder, $filename, $target, $footergrey,
 }
 
 // =========================================================================
-// Usado por : mk_fork.php
+// Usado por : mk_fork.php, mk_crm.php
 // ANTES: "TwigTemplate"     :   "pmi/'.$a['TwigTemplate'].'",
 //  update 2024-10: reemplazar "_" con " " en el titulo del correo
 // =========================================================================
@@ -359,17 +350,19 @@ function fill_config( $a )
 {
 
     $pageTitle = str_replace("_", " ", $a['htmltitle'] );
+    $basePath =  str_replace("\\", "/", dirname(dirname(dirname(__DIR__))) );
+
 
     $config_template='{
     "DESCRIPTION"      :   "########### PMI  ############",
    
     "config_template" :
     {
-        "MAMP-PRO-ON-MAC"  :   "http://mailtool.lan:8888/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'",
-        "MAMP-PRO-ON-PC"   :        "http://mailtool.lan/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'",
-
-        "MAMP-ON-MAC"      :   "http://localhost:8888/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'",
-        "openHTML-MAC"     :   "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html",
+        "test-url"       :
+        {
+            "url_local"   : "file:///'. $basePath .'/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html",
+            "url_paginum" : "https://paginum.com/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html"
+        },
 
         "Subject"          :   "'.$a['subject'].'",
         "Preheader"        :   "'.$a['preheader'].'",
@@ -382,13 +375,20 @@ function fill_config( $a )
                 "CustomerKey" : "'.$a['customerkey'].'"
             }
         ],
-        "test-url"         :   
+
+        "test-url_legacy"         :   
         [
             { "urlD" : "https://paginum.com/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'" } ,
             { "urlS" : "https://paginum.com/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html"  },
             { "urlS" : "http://mailtool.lan:8888/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html"},
             { "urlS" : "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html" },
-            { "THIS" :  "urlD: Dynamic content / urlS: Static content" }
+            { "THIS" :  "urlD: Dynamic content / urlS: Static content" },
+            {
+                "MAMP-PRO-ON-MAC"  :   "http://mailtool.lan:8888/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'",
+                "MAMP-PRO-ON-PC"   :        "http://mailtool.lan/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'",
+                "MAMP-ON-MAC"      :   "http://localhost:8888/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'",
+                "openHTML-MAC"     :   "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/'.$a['mes'].'/'.$a['folder'].'/'.$a['filename'].'.html"
+            }
         ]
     },
 
@@ -411,6 +411,8 @@ function fill_config( $a )
     "PageTitle"        :   "'  .  $pageTitle   .'",
     "PREHEADER"        :   "",
     "content_bgcolor"  :   "'  . $a['bgColor']   .'",
+    "mobileclasses"    :   "'  . $a['bgColor']   .'",
+
     ';
 
     return $config_template;
@@ -510,11 +512,6 @@ function get_ending()
     return $ending;
 }
 
-function abort( $e=NULL ){
-    echo $e;
-    echo PHP_EOL;
-    die;
-}
 
 // Usado por : mk_fork.php
 // Usado por : mk_html.php
@@ -874,4 +871,82 @@ function rename_files_in_folder(string $folder_path, string $base_id, int $start
     }
 
     ?>
+*/
+
+
+/* 
+// no se usa
+function blockreplace($replacementsfile, $inputfile, $source, $target)
+{    
+
+    $value_old = array();
+    $value_new = array();
+
+    $dataA  = file_get_contents("includes_v2/library-replacements_v2.json");
+    $a1     = json_decode($dataA, true);
+
+    $dataB  = file_get_contents($replacementsfile);
+    $a2     = json_decode($dataB, true);
+
+    $a = array_merge($a1, $a2);
+
+    foreach ($a['replacements'] as $b) {
+        $value_old[] = $b[$source];
+        $value_new[] = $b[$target];
+    }
+    $data  = file_get_contents($inputfile);
+    $data1 = str_replace( $value_old, $value_new, $data);
+    return $data1; 
+}
+
+// usado en versiones previas
+function blockreplace_v2($filename, $replacementsfile, $source, $target, $vars )
+{    
+    $value_old = array();
+    $value_new = array();
+
+
+    $dataA  = file_get_contents("includes_v2/library-replacements_v2.json");
+    $a1     = json_decode($dataA, true);
+    if (!$a1) abort("\033[1;37;41m ERROR: \033[0m includes_v2/library-replacements_v2.json no entrega datos. Revisar sintaxis.");
+    // echo var_export($a1,true); die;
+
+    $dataB  = file_get_contents($replacementsfile);
+    $a2     = json_decode($dataB, true);
+    if (!$a2) abort("\033[1;37;41m ERROR: \033[0m $replacementsfile no entrega datos. Revisar sintaxis.");
+    // echo var_export($a2,true); die;
+
+    $a = array_merge($a2['replacements'], $a1['replacements']);
+    // echo var_export($a2,true); die;
+
+    foreach ($a as $b) {
+        $value_old[] = $b[$source];
+        $value_new[] = $b[$target];
+    }
+    // echo var_export($value_new,true); die;
+    // echo var_export($value_old,true); die;
+
+    $inputfile = getInputFileName($filename , $source);
+    $f         = './../json-data/' . $vars['mes']. '/' .$vars['folder']. '/' . $inputfile . '.json';
+
+    if ( $source == "DCE" || $source == "FSH")
+    {
+        $rawdata  = file_get_contents($f);
+        $rawdata1 = str_replace( $value_old, $value_new, $rawdata);    
+        $a0       = json_decode($rawdata1, true);
+        // echo var_export($a0 ,true); die;
+        $b0       = json_encode($a0['blocks'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        $data1    = "
+    \"blocks\" : \n    ".str_replace("\n" , "\n    ", $b0) . ",\n";
+    }
+    else{
+        $data      = getOriginalBlocks($f);
+        $data1     = str_replace( $value_old, $value_new, $data);    
+    }
+    // echo var_export($data1,true); die;
+    return $data1; 
+}
+
+
+
 */

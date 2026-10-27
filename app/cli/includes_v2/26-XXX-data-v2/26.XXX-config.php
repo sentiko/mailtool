@@ -10,17 +10,26 @@ $p_name4folder     = "serverfolder";
 $p_name4json       = "jsonname";
 $p_name4folderDCE  = "folderdce";
 $p_mailname4DCE    = "NAME4CRM";
-$p_customerkey_DCE = "custkeyDCE";
-$p_name4folderFSH  = "folderfsh";
+$p_customerkey_DCE = "";
+$p_name4folderFSH  = "";
 $p_mailname4FSH    = "NAME4CRM";
-$p_customerkey_FSH = "custkeyFSH";
-$id_FSH_folder     = "999";
+$p_customerkey_FSH = "";
+$id_FSH_folder     = "";
 
 //-----------------------------------------
 
-$companyBrand     = "zyn";
+$companyBrand     = "spin";
+$product          = "zyn";
 
 switch ( (string)$companyBrand ){
+    case 'spin':
+        // $companyBrand  = "spin";
+        if ($product == "zyn")
+            $TwigTemplate = "spin-zyn-2026-v1.twig";
+        else
+            $TwigTemplate = "spin-2026-v1.twig";
+        $bgColor          = "#FFFFFF";    // Don't use "transparent"
+        break;
     case 'zyn':
         // $companyBrand  = "zyn";
         $TwigTemplate     = "zyn-2025-v1.twig";
@@ -43,193 +52,55 @@ switch ( (string)$companyBrand ){
         $bgColor          = "#FFFFFF";    // Don't use "transparent"
         break;
 }
-// $bgColor          = "#0d0c12";    // Dark mode IQOS
+// $bgColor   =  "#0d0c12";    // Dark mode IQOS
 
 //-----------------------------------------
 
 
 $requiredBlocks = array(
-    "zyn25-header-zyn",     
-    "iqos24-center-img",    // 1
-    "zyn25-greeting",       // 
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-
-    "zyn25-zyn-siguenos-ig",   // zyn-siguenos-ig.jpg
-    "zyn25-zyn-find-your-zyn", // zyn-find-your-zyn.jpg
-    "iqos24-columns",       // #, XX , #  (21%, 58%, 21%)
-
-    "iqos24-spacer",
-    "zyn25-legales",
-    "zyn25-footer",
+    "spin-header",    
+    "spin-hero-img",        // 2611-ID-hero.gif
+    "spin-greeting",        // 
+    "spin-txt",             // 
+    "spin-img",             // 2611-ID-bloque1.png
+    "spin-cta",             //
+    "spin-img",             // 2611-ID-bloque2.png
+    "spin-cta",             //
+    "spin-iqos-footer-img", //
+    "spin-footer",          // 
     ""
 );
 
-$requiredBlocks2025 = array(
-    "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
-    "iqos24-greeting",      // 
-    
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
-
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-    "iqos24-center-img",    // 10
-
-
-    "iqos24-greeting-with-bgimg",      //
-    "iqos24-center-img-with-bgimg",    //
-
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    'iqos24-IQOS-Wallet',                   //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',               //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
-    
-
-    "iqos24-cta",           // 
-    'iqos24-p700',          // 
-    'iqos24-p300',          // 
-    'iqos24-columns',       // 
-
-
-    "iq26-footer-transaccionales", // iq26-footer-iqosclub-disclaimers
-    'iqos24-spacer',
-    "iq26-footer-iqos",     // iq24-footer-iqos-nofc-disclaimers
-    ""
-
-);
-// MODULOS PARA TEMPLATE iqos-2024-v1.twig
-$requiredBlocks__IQOS = array(
-    "iqos24-footer-iqos-forever-curious",
-    "iqos24-header-iqos-DARK",
-    "iqos24-footer-iqos-forever-curious-DARK",
-
-    "iqos24-header-iqos",   // REEMPLAZA A: "header_brand_world", 
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-greeting",      // REEMPLAZA A: "greeting_v2",
-    
-    "iqos24-greeting-with-bgimg",
-    "iqos24-center-img-with-bgimg",
-    
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-    "iqos24-center-img",    // REEMPLAZA A: "img", "stageIMG",
-
-
-    "iqos24-columns-img-img-img",
-    "iqos24-columns-img-greeting-img",
-    //Hacen lo mismo:
-    'iqos24-columns-img-xxxxx-img',         //  Columna 1: IMG1 margen izq, Columna 2: CODIGO-MGM, columna 3: margen derecho  
-    "iqos24-columns-img-referralcode-img",
-    
-    
-    'iqos24-IQOS-Wallet',                //  IMG: texto descarga tu wallet  IMG WALLET COLUMNA1, IMG WALLET COLUMNA2 
-    'iqos24-img-sharemycode',            //  IMG con MSG WA: "Te regalo XX% de descuento en la compra de tu primer Kit IQOS ILUMA, exclusivo en iqos.com. No olvides utilizar mi código %%referral_code%% al comprar."
-    'iqos24-columns-multirows-img-img',  //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-greeting-img",
-
-      
-    "iqos24-cta",           // REEMPLAZA A: "cta1_v2",
-    'iqos24-p700',          // REEMPLAZA A: "p700_BW",
-    'iqos24-p300',          // REEMPLAZA A: "p300_BW",
-    'iqos24-columns',       // REEMPLAZA A: "columns",
-    'iqos24-spacer',        // REEMPLAZA A: "spacer",
-    
-    "iqos24-canales-de-comunicacion-2",
-
-    'iqos24-Tu-Equipo-IQOS',// REEMPLAZA A: "Tu_Equipo_IQOS",
-    
-    "iqos24-legales-iluma", // REEMPLAZA A: "bloque_legales_iluma",
-    "iqos24-footer-iqos",    // REEMPLAZA A: "footer_bw_v1_lowercase",
-
-    "iqos24-footer-iqos-forever-curious",    // REEMPLAZA A: "iqos24-footer-iqos",
-
+// MODULOS PARA TEMPLATE spin-premia-2026-v1.twig
+$requiredBlocks_spinpremia_iqos = array(
+    "spin-header",    
+    "spin-hero-img",        // 2611-ID-hero.gif
+    "spin-greeting",        // 
+    "spin-txt",             // 
+    "spin-img",             // 2611-ID-bloque1.png
+    "spin-cta",             //
+    "spin-img",             // 2611-ID-bloque2.png
+    "spin-cta",             //
+    "spin-iqos-footer-img", //
+    "spin-footer",          // 
     ""
 );
-// MODULOS PARA TEMPLATE zyn-2025-v1.twig
-$requiredBlocks__ZYN = array(
-    "zyn25-header-zyn",     
-    "iqos24-center-img",    // 1
-    "zyn25-greeting",       // 
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-
-    "zyn25-zyn-siguenos-ig",   // zyn-siguenos-ig.jpg
-    "zyn25-zyn-find-your-zyn", // zyn-find-your-zyn.jpg
-    "iqos24-columns",       // #, XX , #  (21%, 58%, 21%)
-
-    "iqos24-spacer",
-    "zyn25-legales",
-    "zyn25-footer",
+// MODULOS PARA TEMPLATE spin-zyn-2026-v1.twig
+$requiredBlocks_spinpremia_zyn = array(
+    "spin-zyn-header",    
+    "spin-hero-img",        // 2611-ID-hero.gif
+    "spin-zyn-greeting",    // 
+    "spin-zyn-txt",         // 
+    "spin-img",             // 2611-ID-bloque1.png
+    "spin-zyn-cta",         //
+    "spin-img",             // 2611-ID-bloque2.png
+    "spin-zyn-cta",         //
+    "spin-zyn-footer-img",  //
+    "spin-zyn-footer",      // 
     ""
 );
-// MODULOS PARA TEMPLATE clubzero-2025-v1.twig [IQOS CLUB]
-$requiredBlocks_ic = array(
-    "iqos24-header-iqos",   // 
-    "iqos24-center-img",    // 1
-    "ic26-greeting",        // 
-    
-    "iqos24-center-img",    // 2
-    "iqos24-center-img",    // 3
-    "iqos24-center-img",    // 4
-    "iqos24-center-img",    // 5
-    "iqos24-center-img",    // 6
-    "iqos24-center-img",    // 7
-    "iqos24-center-img",    // 8
-    "iqos24-center-img",    // 9
-
-    "ic26-greeting",
-    "ic26-p300",
-    "ic26-p700",
-    "ic26-Row-TradePointsA",    // 26.73
-    "ic26-Row-TradePointsB",    // 26.75, 26.76
-    "ic26-Row-TradePointsC",    // 26.77, 26.79
-    "ic26-columns-multirows-img-txt-img",
-    "ic26-tabla-actividades",
-    
-    'iqos24-columns',       // 
-    'iqos24-columns-img-xxxxx-img',         //  #, referralcode, # (x%, x%, x%)
-    'iqos24-columns-multirows-img-img',     //  Tarjeta IMG SUP/IMG INF
-    "iqos24-columns-multirows-img-img-img", //
-    "iqos24-columns-multirows-img-greeting-img",//
-    "iqos24-columns-img-img-img",           //  #, # , #  (x%, x%, x%)
-    "iqos24-columns-img-greeting-img",      //  #, hola , #  (x%, x%, x%)
 
 
-
-    "tc25-textbox-black",
-    "tc25-textbox-grey",
-    "tc25-textbox-gray-listbox-cta",
-
-    /////////////////////////////////////////////
-    "ic26-contactanos",
-    "iq26-footer-iqos",
-    ""
-);
 
 
 /*
@@ -252,18 +123,26 @@ PRECIO TACHADO:
 ********************************************************************
 
 ++---------------------------------++
-||   COLOR TURQUESA Brand World    ||
-||   00d1d2                        ||
-||   COLOR SLATE  Brand World      ||
-||   34303d                        ||
-||   Naranja                       ||
-||   e3813b                        ||
-||   GRIS CLARO                    ||
-||   faf7f4                        ||
+||  Azul ZYN                       ||  
+||  #01a9e0                      ||  
+||  COLOR TURQUESA Brand World     ||
+||  #00d1d2                      ||
+||  Rojo                           ||      
+||  #fe282a                      ||  
+||  COLOR SLATE  Brand World       ||
+||  #34303d                      ||
+||  Naranja                        ||
+||  #e3813b                      ||
+||  GRIS CLARO                     ||
+||  #faf7f4                      ||
 ++---------------------------------++
---------------------
+
+
+===================================================================
+<span style=\"font-weight:700;\"></span>
 ===================================================================
 <span style=\"color:#00d1d2;font-weight:700;\"></span>
+font-style: italic;
 ===================================================================
 <span style=\"color:#00d1d2;font-weight:700;font-size:24px;\"></span>
 ===================================================================

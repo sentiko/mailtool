@@ -38,7 +38,6 @@ else{
 }
 
 // echo "Year:" . $year . PHP_EOL  ."Id: " . $id . PHP_EOL; die;
-
 // echo $arguments.PHP_EOL; die;
 // $arguments= "_JSON/CINTILLO-MGM/CINTILLO-MGM-json-arguments-ROOT-HTML.php";
 

@@ -32,6 +32,326 @@ $libraryBlocks = array();
  */
 
 
+/** ------------------------------------------------------
+ *    START CRM 2026-10    Plantilla [spin-zyn-2026-v1.twig]
+ *      SPIN PREMIA ZYN
+ *  ------------------------------------------------------
+ */
+$libraryBlocks['spin-zyn-header'] ='
+        {
+            "type"          :  "spin-center-img",
+            "bgcolor"       :  "#ffffff",
+            "img"           :  "header-zyn-oxxo.png",
+            "alt"           :  "ZYN",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "20",
+            "width_pc"      :  "100",
+            "this"          :  "HEADER ZYN - Spin Premia",
+            "version"       :  "spin-2026-v1.twig"
+       },';
+$libraryBlocks['spin-zyn-footer-img'] ='
+        {
+            "type"          : "spin-center-img",
+            "bgcolor"       : "#ffffff",
+            "img"           : "footer-zyn.png",
+            "alt"           : "ZYN",
+            "url"           : "#",
+            "alias"         : "",
+            "mtop"          : "35",
+            "mbottom"       : "50",
+            "width_pc"      : "35",
+            "this"          : "CENTERED LOGO ZYN | Footer | footer-zyn.png",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-zyn-greeting'] ='
+        {
+            "type"          : "spin-greeting",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "35px",
+            "height"        : "35px",
+            "align"         : "center",
+            "bgcolor"       : "#ffffff",
+            "color"         : "#003b5e",
+            "mtop"          : "40",
+            "mbottom"       : "30",
+            "txt"           : "Hola,",
+            "HELP"          : [
+                                {"height"        : "checar eso UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"        : "ZYN azul: #01a9e0 | ZYN-2025 azul: #003b5e | Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"   : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},                                
+                                {"nope_txtClass" : "txt_26"}
+                            ],
+            "this"          : "HOLA",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-zyn-txt'] ='
+        {
+            "type"          : "spin-txt",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "300",
+            "fontsize"      : "20",
+            "height"        : "26",
+            "txtClass"      : "mbText18",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "msides_pc"     : "0",
+            "mcolor"        : "#ffffff",
+            "txt"           : "LOREM IPSUM",
+            "HELP"          : [
+                                {"Titulo H1"         :"fontsize: 30, height: 36, txtClass mbText26"},
+                                {"Titulo H3"         :"fontsize: 14, height: 20, txtClass mbText14"},
+                                {"Titulo H3"         :"fontsize: 18, height: 22, txtClass mbText14 Este producto no es libre de riesgo"},
+                                {"InlineIMG"         : "<img width=\"55\" height=\"26\" alt=\"Oxxo\" src=\"oxxo_logo.png\" style=\"width:55px;height:26px;display:inline-block;padding-right:3px;border:0;outline:none;text-decoration:none;margin:0;vertical-align:-7px;\">"},
+                                {"NegritasTurquesa"  : "<span style=\"color:#00d1d2;font-weight:700;\">IQOS</span>"},
+                                {"Link"              : "<a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a>"},
+                                {"MarcaRegistrada"   : "<span style=\"font-size:12px;\"><sup>®</sup></span>"},
+                                {"msides_pc"    : "UNITS: %  | FORMAT: number"},
+                                {"width_pc"     : "UNITS: %  | FORMAT: number"},
+                                {"height"       : "UNITS: px | FORMAT: number"},
+                                {"COLORS"       : "Turquesa: #00d1d2 | Slate: #34303d"}
+                            ],
+            "this"          : "LOREM IPSUM",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-zyn-cta'] ='
+        {
+            "type"          : "spin-cta",
+            "txt"           : "Conoce más",
+            "url"           : "https://cloud.saborsinhumo.com/",
+            "font"          : "arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "16px",
+            "lineheight"    : "48px",
+            "color"         : "#FFFFFF",
+            "btncolor"      : "#01a9e0",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "40",
+            "mbottom"       : "40",
+            "width"         : "200px",
+            "HELP"          : [
+                                {"COLORS"       : "ZYN azul: #01a9e0 | ZYN-2025 azul: #003b5e | Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"CTA_Size"     : "200px: Registrar mi IQOS | 250px: Registrar mi dispositivo"}
+                              ],
+            "this"          : "CTA Conoce más | compatible con Outlook VML",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-zyn-footer'] ='
+        {
+            "type"          : "spin-zyn-footer",
+            "img"           : "footer-zyn-18.png",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "100",
+            "fontsize"      : "10px",
+            "fontstyle"     : "normal",
+            "height"        : "17px",
+            "color"         : "#34313d",
+            "bgcolor"       : "#ffffff",
+            "mbottom"       : "40px",
+            "txtClass"      : "mbFooterTxt",
+            "txt"           : "Consulta términos y condiciones en zyn.com. ZYN es un producto que contiene nicotina, la cual es altamente adictiva. Venta exclusiva para mayores de 18 años. El etiquetado y empaque puede variar en punto de venta. Vigencia del 15 de octubre al 4 de noviembre de 2026. Consulta productos participantes en tienda. No aplica con otras promociones. Aplican restricciones.",
+            "HELP"          : [
+                                { "txt_sample"    : "*Consulta términos y condiciones. Disponible únicamente en tiendas seleccionadas. IQOS es un dispositivo electrónico que no contiene tabaco, ni nicotina. Venta exclusiva para mayores de 18 años. El etiquetado y el paquete pueden variar en punto de venta.Vigencia del 13 agosto al 5 octubre de 2026. Consulta productos participantes en tienda, No aplica con otras promociones. Aplican restricciones.<br /><br />Esta dinámica es organizada y administrada únicamente por Philip Morris México, S.A. de C.V. (\"PMM\"). Cadena comercial OXXO, S.A. de C.V. (\"OXXO\") no es responsable de la organización, administración, ejecución, mécanica, selección de ganadores ni entrega del premio. Para cualquier duda o aclaración relacionada con la promoción, favor de contactar directamente a PMM."},
+                                { "height"        : "UNITS: px | FORMAT: use only a number"},
+                                { "COLORS"        : "Turquesa: #00d1d2 | Slate: #34303d"},
+                                { "TXT Formats"   : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},
+                                { "nope_width_pc" : "100"},
+                                { "nope_align"    : "center"},
+                                { "nope_mtop"     : "40"},
+                                { "nope_msides"   : "0"},
+                                { "nope_mcolor"   : "transparent"}
+                            ],
+            "this"          : "FOOTER",
+            "version"       : "spin-2026-v1.twig"
+        }';
+
+/** ------------------------------------------------------
+ *    START CRM 2026-10    Plantilla [spin-premia-2026-v1.twig]
+ *      SPIN PREMIA IQOS
+ *  ------------------------------------------------------
+ */
+$libraryBlocks['spin-header'] ='
+        {
+            "type"          :  "spin-center-img",
+            "bgcolor"       :  "#ffffff",
+            "img"           :  "header-iqos-oxxo.png",
+            "alt"           :  "IQOS",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "20",
+            "width_pc"      :  "100",
+            "this"          :  "HEADER IQOS - Spin Premia",
+            "version"       :  "spin-2026-v1.twig"
+       },';
+$libraryBlocks['spin-header-FIX-THIS'] ='
+        {
+            "type"          :  "spin-header-FIX-THIS",
+            "bgcolor"       :  "#fefefe",
+            "img"           :  "header-iqos-oxxo.png",
+            "alt"           :  "IQOS",
+            "url"           :  "#",
+            "mtop"          :  "0",
+            "mbottom"       :  "30px",
+            "width_pc"      :  "100",
+            "alias"         :  "",
+            "this"          :  "IMG header IQOS / Spin Premia",
+            "version"       :  "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-hero-img'] ='
+        {
+            "type"          :  "spin-hero-img",
+            "bgcolor"       :  "#ffffff",
+            "img"           :  "2611-id-hero.gif",
+            "alt"           :  "",
+            "url"           :  "https://cloud.sinceniza.com/",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "91.4",
+            "this"          :  "Hero IMG",
+            "version"       :  "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-greeting'] ='
+        {
+            "type"          : "spin-greeting",
+            "font"          : "\'IQOS\', Cabin, arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "35px",
+            "height"        : "35px",
+            "align"         : "center",
+            "bgcolor"       : "#ffffff",
+            "color"         : "#00d1d2",
+            "mtop"          : "40",
+            "mbottom"       : "30",
+            "txt"           : "Hola,",
+            "HELP"          : [
+                                {"height"        : "checar eso UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"        : "ZYN azul: #01a9e0 | ZYN-2025 azul: #003b5e | Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"   : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},                                
+                                {"nope_txtClass" : "txt_26"}
+                            ],
+            "this"          : "HOLA",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-txt'] ='
+        {
+            "type"          : "spin-txt",
+            "font"          : "\'IQOS\', Cabin, arial, sans-serif",
+            "fontweight"    : "300",
+            "fontsize"      : "20",
+            "height"        : "26",
+            "txtClass"      : "mbText18",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "msides_pc"     : "0",
+            "mcolor"        : "#ffffff",
+            "txt"           : "LOREM IPSUM.",
+            "HELP"          : [
+                                {"Titulo H1"         :"fontsize: 30, height: 36, txtClass mbText26"},
+                                {"Titulo H3"         :"fontsize: 14, height: 20, txtClass mbText14"},
+                                {"Titulo H3"         :"fontsize: 18, height: 22, txtClass mbText14 Este producto no es libre de riesgo"},
+                                {"InlineIMG"         : "<img width=\"55\" height=\"26\" alt=\"Oxxo\" src=\"oxxo_logo.png\" style=\"width:55px;height:26px;display:inline-block;padding-right:3px;border:0;outline:none;text-decoration:none;margin:0;vertical-align:-7px;\">"},
+                                {"NegritasTurquesa"  : "<span style=\"color:#00d1d2;font-weight:700;\">IQOS</span>"},
+                                {"Link"              : "<a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a>"},
+                                {"MarcaRegistrada"   : "<span style=\"font-size:12px;\"><sup>®</sup></span>"},
+                                {"msides_pc"    : "UNITS: %  | FORMAT: number"},
+                                {"width_pc"     : "UNITS: %  | FORMAT: number"},
+                                {"height"       : "UNITS: px | FORMAT: number"},
+                                {"COLORS"       : "Turquesa: #00d1d2 | Slate: #34303d"}
+                            ],
+            "this"          : "TEXTO",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-cta'] ='
+        {
+            "type"          : "spin-cta",
+            "txt"           : "Conoce IQOS",
+            "url"           : "https://cloud.sinceniza.com/",
+            "font"          : "\'IQOS\', Cabin, arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "16px",
+            "lineheight"    : "48px",
+            "color"         : "#FFFFFF",
+            "btncolor"      : "#00d1d2",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "40",
+            "mbottom"       : "40",
+            "width"         : "200px",
+            "HELP"          : [
+                                {"COLORS"       : "ZYN azul: #01a9e0 | ZYN-2025 azul: #003b5e | Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"CTA_Size"     : "200px: Registrar mi IQOS | 250px: Registrar mi dispositivo"}
+                              ],
+            "this"          : "CTA Conoce IQOS | compatible con Outlook VML",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-img'] ='
+        {
+            "type"          : "spin-center-img",
+            "bgcolor"       : "#ffffff",
+            "img"           : "26p11.1-bloque2.png",
+            "alt"           : "",
+            "url"           : "#",
+            "alias"         : "",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "width_pc"      : "91.4",
+            "this"          : "",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-iqos-footer-img'] ='
+        {
+            "type"          : "spin-center-img",
+            "bgcolor"       : "#ffffff",
+            "img"           : "footer-iqos.png",
+            "alt"           : "IQOS",
+            "url"           : "#",
+            "alias"         : "",
+            "mtop"          : "70",
+            "mbottom"       : "50",
+            "width_pc"      : "35",
+            "this"          : "CENTERED LOGO IQOS | Footer | IQOS-logo-footer.png",
+            "version"       : "spin-2026-v1.twig"
+        },';
+$libraryBlocks['spin-footer'] ='
+        {
+            "type"          : "spin-footer",
+            "img"           : "footer-18.png",
+            "font"          : "\'IQOS\', Cabin, arial, sans-serif",
+            "fontweight"    : "100",
+            "fontsize"      : "10px",
+            "fontstyle"     : "normal",
+            "height"        : "17px",
+            "color"         : "#595959",
+            "bgcolor"       : "#ffffff",
+            "mbottom"       : "40px",
+            "txtClass"      : "mbFooterTxt",
+            "txt"           : "*Consulta términos y condiciones. Disponible únicamente en tiendas seleccionadas. IQOS es un dispositivo electrónico que no contiene tabaco ni nicotina. Venta exclusiva para mayores de 18 años. El etiquetado y el paquete pueden variar en punto de venta. Vigencia del 15 de octubre al 4 de noviembre de 2026. Consulta productos participantes en tienda. No aplica con otras promociones. Aplican restricciones.",
+            "HELP"          : [
+                                {"txt_sample"    : "*Consulta términos y condiciones. Disponible únicamente en tiendas seleccionadas. IQOS es un dispositivo electrónico que no contiene tabaco, ni nicotina. Venta exclusiva para mayores de 18 años. El etiquetado y el paquete pueden variar en punto de venta.Vigencia del 13 agosto al 5 octubre de 2026. Consulta productos participantes en tienda, No aplica con otras promociones. Aplican restricciones.<br /><br />Esta dinámica es organizada y administrada únicamente por Philip Morris México, S.A. de C.V. (\"PMM\"). Cadena comercial OXXO, S.A. de C.V. (\"OXXO\") no es responsable de la organización, administración, ejecución, mécanica, selección de ganadores ni entrega del premio. Para cualquier duda o aclaración relacionada con la promoción, favor de contactar directamente a PMM."},
+                                {"height"        : "UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"        : "Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"   : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},
+                                {"nope_width_pc" : "100"},
+                                {"nope_align"    : "center"},
+                                {"nope_mtop"     : "40"},
+                                {"nope_msides"   : "0"},
+                                {"nope_mcolor"   : "transparent"}
+                            ],
+            "this"          : "FOOTER",
+            "version"       : "spin-2026-v1.twig"
+        }';
+
 
 /** ------------------------------------------------------
  *    START CRM 2026-04    Plantilla [clubzero-2025-v1.twig]

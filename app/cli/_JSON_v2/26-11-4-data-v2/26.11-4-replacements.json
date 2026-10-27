@@ -1,0 +1,37 @@
+{
+    "replacements" : 
+    [
+        {
+            "HTML"       : "2611-4-bloque1.png",
+            "FSH"        : "https://paginum.com/email/spin2610/spin-261019-p11/2611-4-bloque1.png",
+            "DCE"        : "https://paginum.com/email/spin2610/spin-261019-p11/2611-4-bloque1.png"
+        },
+        {
+            "HTML"       : "2611-4-hero.gif",
+            "FSH"        : "https://paginum.com/email/spin2610/spin-261019-p11/2611-4-hero.gif",
+            "DCE"        : "https://paginum.com/email/spin2610/spin-261019-p11/2611-4-hero.gif"
+        },
+        {
+            "HTML"       : "footer-18.png",
+            "FSH"        : "https://paginum.com/email/spin2610/spin-261019-p11/footer-18.png",
+            "DCE"        : "https://paginum.com/email/spin2610/spin-261019-p11/footer-18.png"
+        },
+        {
+            "HTML"       : "footer-iqos.png",
+            "FSH"        : "https://paginum.com/email/spin2610/spin-261019-p11/footer-iqos.png",
+            "DCE"        : "https://paginum.com/email/spin2610/spin-261019-p11/footer-iqos.png"
+        },
+        {
+            "HTML"       : "header-iqos-oxxo.png",
+            "FSH"        : "https://paginum.com/email/spin2610/spin-261019-p11/header-iqos-oxxo.png",
+            "DCE"        : "https://paginum.com/email/spin2610/spin-261019-p11/header-iqos-oxxo.png"
+        },
+        {
+            "HTML"       : "oxxo_logo.png",
+            "FSH"        : "https://paginum.com/email/spin2610/spin-261019-p11/oxxo_logo.png",
+            "DCE"        : "https://paginum.com/email/spin2610/spin-261019-p11/oxxo_logo.png"
+        }
+        
+
+    ]
+}

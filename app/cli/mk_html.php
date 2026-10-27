@@ -104,7 +104,11 @@ $twigData['isWebVer'] = 0;     // HTML version for mail
 // LOAD TWIG TEMPLATE ----------------------------------------------------
 // $loader = new \Twig\Loader\FilesystemLoader('../../app/views/pmi');
 $loader = new \Twig\Loader\FilesystemLoader(
-    array(   dirname(dirname(__DIR__)) ."/app/views/iqos/", 
+    array(   
+             dirname(dirname(__DIR__)) ."/app/views/spinpremia/", 
+             dirname(dirname(__DIR__)) ."/app/views/spinpremia/templates/", 
+             dirname(dirname(__DIR__)) ."/app/views/spinpremia/blocks/", 
+             dirname(dirname(__DIR__)) ."/app/views/iqos/", 
              dirname(dirname(__DIR__)) ."/app/views/iqos/templates/", 
              dirname(dirname(__DIR__)) ."/app/views/iqos/blocks/", 
              dirname(dirname(__DIR__)) ."/app/views/ms/", 

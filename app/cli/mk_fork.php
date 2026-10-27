@@ -87,6 +87,9 @@ if ($vars['id'] == "000")
 // echo "so far so good2 "; die;
 
 $config_sections = fill_config( $vars );
+// echo "FILE: " . __FILE__ . " | LINE: " . __LINE__ . "\n";
+// echo var_export($config_sections,true); die;
+
 $blocks_section  = blockreplace_v3($target, $vars);
 $ending          = get_ending();
 

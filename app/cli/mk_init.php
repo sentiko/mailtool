@@ -14,6 +14,7 @@ define("WK_SOURCE_DIR"   , "includes_v2/$year-XXX-data-v2/");
 define("WK_TARGET_DIR"   , "_JSON_v2/");
 define("MK_DIR_TEMPLATE" , "$year-XXX-data-v2/");
 
+// ::::::: check arguments ::::::::: //
 if ($argc == 2)
 {
     $number = $argv[1];

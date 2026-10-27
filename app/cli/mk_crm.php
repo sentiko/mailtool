@@ -40,7 +40,6 @@ if ($argc == 3){
         {
             list($year, $idMail) = explode(".",  $argv[1]);
         }
-
     }
     else if ( $target2 === "DCE" || $target2 === "FSH" )
     {
@@ -62,45 +61,48 @@ else{
 }
 
 $arguments = "_JSON_v2/$year-$idMail-data-v2/$year.$idMail-config.php";
-
-// echo $arguments.PHP_EOL; die;
-
-
-// LOAD CONFIG DATA FILE -----------------------------------------
+    // DEBUG:     
+    // displayVar($arguments, __FILE__ , __LINE__ );
+           
+// LOAD CONFIG DATA FILE 
 if( file_exists( $arguments )  ){
     include_once($arguments);
 }else{
-    echo PHP_EOL."\033[1;37;41m ERROR: \033[0m NO EXISTE " . $arguments . PHP_EOL . PHP_EOL;
-    die;
+    abort( "NO EXISTE ".$arguments, __FILE__ , __LINE__ );
 }
-
-$vars            = createEnvironment2($arguments, $target );
-
-//var_export($vars); die;
-
-if ($vars['id'] == "000")
+if ($p_id == "000")
 {
-    // Default data in file? abort process
-    echo PHP_EOL."\033[1;37;41m ERROR: \033[0m No hay datos en archivo $year.$idMail-config.php" . PHP_EOL . PHP_EOL;
-    die;
+    // abort process if default empty data in file
+    abort( "No hay datos en archivo $year.$idMail-config.php", __FILE__, __LINE__);
 }
 
 
 
+$vars  = createEnvironment2($arguments, $target );
+        // DEBUG
+        // displayVar($vars, __FILE__ , __LINE__ );
 
 $config_sections = fill_config( $vars );
+        // DEBUG
+        // displayVar($config_sections, __FILE__ , __LINE__ );
+        // displayVar($vars, __FILE__ , __LINE__ );
+
 $blocks_section  = blockreplace_v3($target, $vars);
+        // DEBUG
+        // displayVar($blocks_section, __FILE__ , __LINE__ );
+
 $ending          = get_ending();
+        // DEBUG
+        // displayVar($ending, __FILE__ , __LINE__ );
 
 $boilerplate_ = $config_sections
                 .$blocks_section
                 .$ending;
 
-
-$jsonFilename    = $vars['filename'].".json";   //pmi-YYMMDD-IDYY.ID-json-filename-HTML.json 
+$jsonFilename    = $vars['filename'].".json";        //pmi-YYMMDD-IDYY.ID-json-filename-HTML.json 
 $base            = dirname( dirname(__FILE__) ) . "/json-data/";   // /Users/armandoromero/Documents/devF1/mailtool.lan/app/json-data
-$monthFolder     = $vars['mes'];     // pmiYYMM
-$jsonFolder      = $vars['folder'];  // pmi-YYMMDD-foldername
+$monthFolder     = $vars['mes'];                     // pmiYYMM
+$jsonFolder      = $vars['folder'];                  // pmi-YYMMDD-foldername
 $jsonPath        = $base . $monthFolder . "/". $jsonFolder;  // Ruta completa de carpeta JSON
 $jsonFilePath    = $jsonPath . "/" . $jsonFilename;  // Rura completa de archivo JSON
 
@@ -161,7 +163,11 @@ $twigData['isWebVer'] = 0;     // HTML version for mail
 // LOAD TWIG TEMPLATE ----------------------------------------------------
 // $loader = new \Twig\Loader\FilesystemLoader('../../app/views/pmi');
 $loader = new \Twig\Loader\FilesystemLoader(
-    array(   dirname(dirname(__DIR__)) ."/app/views/iqos/", 
+    array(   
+             dirname(dirname(__DIR__)) ."/app/views/spinpremia/", 
+             dirname(dirname(__DIR__)) ."/app/views/spinpremia/templates/", 
+             dirname(dirname(__DIR__)) ."/app/views/spinpremia/blocks/", 
+             dirname(dirname(__DIR__)) ."/app/views/iqos/", 
              dirname(dirname(__DIR__)) ."/app/views/iqos/templates/", 
              dirname(dirname(__DIR__)) ."/app/views/iqos/blocks/", 
              dirname(dirname(__DIR__)) ."/app/views/ms/", 
@@ -175,14 +181,14 @@ $loader = new \Twig\Loader\FilesystemLoader(
              dirname(dirname(__DIR__)) ."/app/views/system/" 
     )
 );
-$twig = new \Twig\Environment($loader);
+
+$twig     = new \Twig\Environment($loader);
 $template = $twig->load($TwigTemplate);
 
 // RENDER TWIG TEMPLATE TO STRING ----------------------------------------
 $output = $twig->render($TwigTemplate, $twigData );
 
 // RENDER TWIG TEMPLATE TO FILE ------------------------------------------
-
 $htmlfile = dirname(dirname(dirname(__FILE__)))."/email/" . $twigData['HTMLstaticfile'];
 
 // file_put_contents($htmlfile, $output);
