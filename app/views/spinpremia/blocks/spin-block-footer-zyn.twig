@@ -1,0 +1,16 @@
+{% block spin_zyn_footer ~%}
+                  <!--FOOTER-->
+                  <tr>
+                    <td align="center" style="padding:0;background-color:{{blocks[index].bgcolor}};">
+                      <table cellpadding="0" cellspacing="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; padding:0; margin:auto; width:90%; height:100%;">
+                        <tr style="border:0; vertical-align: top;">
+                          <td align="center" colspan="1" style="padding:0;margin:0;font-size:0; min-width:80px;width:20%; {# background-color:cyan; #} ">
+                            <img width="55" height="55" src="{{blocks[index].img}}" alt="18+" style=" width:55px; height:55px; display:block; border:0; box-shadow: 0 0 1px 0px rgba(255,255,255,0.01); image-rendering: -webkit-optimize-contrast; background-color: #fefefe !important;">
+                          </td>
+                          <td class="mbFooterTxt" align="left" colspan="1"  style="color:{{blocks[index].color}}; font-family:{{blocks[index].font|raw}}; font-weight:{{blocks[index].fontweight}}; font-size:{{blocks[index].fontsize}}; font-style:{{blocks[index].fontstyle}}; line-height:{{blocks[index].height}}; padding-bottom:{{blocks[index].mbottom}}; padding-left:10px; letter-spacing:0; margin:0; text-align: left; width:80%; border:0;">
+                            {{blocks[index].txt|raw}}
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>{% endblock -%}

@@ -1,0 +1,38 @@
+{% block spin_cta ~%}
+    {#- Forces mtop to include "px"  -#}
+    {%- set mtop = "0" -%}
+    {%- if "px" in blocks[index].mtop -%}
+        {%- set mtop = blocks[index].mtop -%}
+    {%- else -%}
+        {%- if blocks[index].mtop != "0" -%}
+          {%- set mtop = blocks[index].mtop ~ "px" -%}
+        {%- endif -%}    
+    {%- endif -%}
+    {# Forces mbottom to include "px"  #}
+    {%- set mbottom = "0" -%}
+    {%- if "px" in blocks[index].mbottom -%}
+        {%- set mbottom = blocks[index].mbottom -%}
+    {%- else -%}
+        {%- if blocks[index].mbottom != "0" -%}
+          {%- set mbottom = blocks[index].mbottom ~ "px" -%}
+        {%- endif -%}    
+    {%- endif ~%}
+                  <!--CTA-->
+                  <tr>
+                    <td align="center" class="px" style="padding:{{mtop}} 40px {{mbottom}} 40px; margin: 0 auto; background-color: {{blocks[index].bgcolor}};">
+                      <!--[if mso]>
+                      <v:roundrect  xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{blocks[index].url}}" style="height:{{blocks[index].lineheight}}; v-text-anchor:middle; width:{{blocks[index].width}};" arcsize="50%" stroke="f" fillcolor="{{blocks[index].btncolor}}">
+                        <w:anchorlock/>
+                        <center style="margin: 0 auto; color:{{blocks[index].color}};  font-family:{{blocks[index].font|raw}};  font-size:{{blocks[index].fontsize}};  font-weight:{{blocks[index].fontweight}};">
+                          {{blocks[index].txt}}
+                        </center>
+                      </v:roundrect>
+                      <![endif]-->
+                      <!--[if !mso]><!-->
+                      <a href="{{blocks[index].url}}" target="_blank" class="btn-full" 
+                        style="margin: 0 auto; display:inline-block;  width:{{blocks[index].width}};  background-color:{{blocks[index].btncolor}};  color:{{blocks[index].color}};  font-family:{{blocks[index].font|raw}};  font-weight:{{blocks[index].fontweight}};  font-size:{{blocks[index].fontsize}};  line-height:{{blocks[index].lineheight}};  text-align:center;  text-decoration:none;  border-radius:25px;  -webkit-text-size-adjust:none;  mso-hide:all;">
+                        {{blocks[index].txt}}
+                      </a>
+                      <!--<![endif]-->
+                    </td>
+                  </tr>{% endblock -%}

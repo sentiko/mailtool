@@ -1,0 +1,52 @@
+{%- block spin_txt ~%}
+    {#- Forces mtop to include "px"  -#}
+    {%- set mtop = "0" -%}
+    {%- if "px" in blocks[index].mtop -%}
+        {%- set mtop = blocks[index].mtop -%}
+    {%- else -%}
+        {%- if blocks[index].mtop != "0" -%}
+          {%- set mtop = blocks[index].mtop ~ "px" -%}
+        {%- endif -%}    
+    {%- endif -%}
+    {# Forces mbottom to include "px"  #}
+    {%- set mbottom = "0" -%}
+    {%- if "px" in blocks[index].mbottom -%}
+        {%- set mbottom = blocks[index].mbottom -%}
+    {%- else -%}
+        {%- if blocks[index].mbottom != "0" -%}
+          {%- set mbottom = blocks[index].mbottom ~ "px" -%}
+        {%- endif -%}    
+    {%- endif -%}
+{%- set marginblock = 100 - 2* blocks[index].msides_pc ~%}
+                  <!--TXT-->
+                  <tr>
+                    <th valign="top" style="text-align:left;margin:0;padding:0;" align="center">
+                      <table valign="top" align=center cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:100%; width:100%; margin:0; background-color:{{blocks[index].mcolor}};" role="presentation">
+                        <tbody>
+                          {%- if mtop != "0" ~%}
+                          <tr style="background-color:transparent;">
+                            <th valign="top" style="background-color:transparent; text-align:left; font-size:1px; line-height:1px; height:1px; padding: {{mtop}} 0 0 0;">&nbsp;</th>
+                          </tr>{% endif ~%}
+                          <tr>
+                            <th valign="top" style="width:100%;" >
+                              <table  valign="middle" align="center" cellpadding="0" cellspacing="0"  style="min-width:{{ marginblock }}%; background-color:{{blocks[index].bgcolor}};" border="0" width="{{ marginblock }}%" role="presentation">
+                                <tbody>
+                                  <tr>
+                                    <th class={{blocks[index].txtClass}}  style="text-align:{{blocks[index].align}}; font-size:{{blocks[index].fontsize}}px;  line-height:{{blocks[index].height}}px;">
+                                      <div style="width:{{ blocks[index].width_pc }}%;  margin:0 auto;  text-align:{{blocks[index].align}};  font-weight:{{blocks[index].fontweight}};  color:{{blocks[index].color}};  font-family: {{blocks[index].font|raw}}; ">
+                                        {{blocks[index].txt|raw}}
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                          {%- if mbottom != "0" ~%}
+                          <tr style="background-color:transparent;">
+                            <th valign="top" style="background-color:transparent; text-align:left; font-size:1px; line-height:1px; height:1px; padding: 0 0 {{mbottom}} 0;">&nbsp;</th>
+                          </tr>{% endif ~%}
+                        </tbody>
+                      </table>
+                    </th>
+                  </tr>{% endblock -%}

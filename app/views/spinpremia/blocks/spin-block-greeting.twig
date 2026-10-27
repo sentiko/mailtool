@@ -1,0 +1,26 @@
+{% block spin_greeting ~%}
+    {#- Forces mtop to include "px"  -#}
+    {%- set mtop = "0" -%}
+    {%- if "px" in blocks[index].mtop -%}
+        {%- set mtop = blocks[index].mtop -%}
+    {%- else -%}
+        {%- if blocks[index].mtop != "0" -%}
+          {%- set mtop = blocks[index].mtop ~ "px" -%}
+        {%- endif -%}    
+    {%- endif -%}
+    {# Forces mbottom to include "px"  #}
+    {%- set mbottom = "0" -%}
+    {%- if "px" in blocks[index].mbottom -%}
+        {%- set mbottom = blocks[index].mbottom -%}
+    {%- else -%}
+        {%- if blocks[index].mbottom != "0" -%}
+          {%- set mbottom = blocks[index].mbottom ~ "px" -%}
+        {%- endif -%}    
+    {%- endif ~%}
+                  <!--HOLA-->
+                  <tr style="color:{{blocks[index].color}};border:none;width:100%;background-color:{{blocks[index].bgcolor}};">
+                    <td align="{{blocks[index].align}}" style="border:none; padding-top:{{mtop}}; padding-bottom:{{mbottom}}; padding-right:0; padding-left:0; margin:0 auto; font-family:{{blocks[index].font|raw}}; mso-line-height-rule:exactly; letter-spacing:0; font-size:{{blocks[index].fontsize}}; font-style:normal; font-weight:{{blocks[index].fontweight}}; line-height:{{blocks[index].height}}; color:{{blocks[index].color}};">
+                      {{blocks[index].txt|raw}}
+                    </td>
+                  </tr>
+                  {%- endblock -%}

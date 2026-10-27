@@ -1,0 +1,21 @@
+{% block spin_header ~%}
+                  <!--HEADER-->
+                  <tr>
+                    <td>
+                      <table bgcolor= "{{blocks[index].bgcolor}}" cellspacing="0" cellpadding="0" border="0" align="center" role="none" style="background-color: {{blocks[index].bgcolor}};  mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0px; width:100%; table-layout:fixed !important;">
+                        {%- if blocks[index].mtop != "0" ~%}
+                        <tr style="background-color:transparent;">
+                          <th valign="top" style="background-color:transparent;text-align:left;font-size:1px;line-height:1px;height:{{blocks[index].mtop}};">&nbsp;</th>
+                        </tr>{% endif ~%}
+                        <tr>
+                          <td align="center" style="padding:0;margin:0">
+                            <img width="600" height="94" alt="{{blocks[index].alt}}" src="{{BaseURLimg}}{{blocks[index].img}}" style="width:600px;height:94px;display:block;border:0;outline:none;text-decoration:none;margin:0;isolation: isolate;" >
+                          </td>
+                        </tr>
+                        {%- if blocks[index].mbottom != "0" ~%}
+                        <tr style="background-color:transparent;">
+                          <th valign="top" style="background-color:transparent;text-align:left;font-size:1px;line-height:1px;height:{{blocks[index].mbottom}};">&nbsp;</th>
+                        </tr>{% endif ~%}
+                      </table>
+                    </td>
+                  </tr>{% endblock -%}
