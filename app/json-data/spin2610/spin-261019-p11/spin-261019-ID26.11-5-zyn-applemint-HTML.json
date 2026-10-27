@@ -1,0 +1,273 @@
+{
+    "DESCRIPTION"      :   "########### PMI  ############",
+   
+    "config_template" :
+    {
+        "test-url"       :
+        {
+            "url_local"   : "file:///C:/www2/mailtool/email/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html",
+            "url_paginum" : "https://paginum.com/email/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html"
+        },
+
+        "Subject"          :   "Apple Mint, el sabor de tu festival favorito.",
+        "Preheader"        :   "Elige entre 3 mg y 6 mg y explora más sabores de ZYN.",
+
+        "PATH"             :   "",
+        "Name-CustomerKey" :   
+        [
+            { 
+                "name"        : "",
+                "CustomerKey" : ""
+            }
+        ],
+
+        "test-url_legacy"         :   
+        [
+            { "urlD" : "https://paginum.com/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML" } ,
+            { "urlS" : "https://paginum.com/email/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html"  },
+            { "urlS" : "http://mailtool.lan:8888/email/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html"},
+            { "urlS" : "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html" },
+            { "THIS" :  "urlD: Dynamic content / urlS: Static content" },
+            {
+                "MAMP-PRO-ON-MAC"  :   "http://mailtool.lan:8888/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML",
+                "MAMP-PRO-ON-PC"   :        "http://mailtool.lan/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML",
+                "MAMP-ON-MAC"      :   "http://localhost:8888/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML",
+                "openHTML-MAC"     :   "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html"
+            }
+        ]
+    },
+
+    "SECTION_1"        :   "########### CONFIGURACION DE PLANTILLA ####################", 
+    "BaseURLassets"    :   "",
+    "BaseURLimg"       :   "",
+    
+    "HTMLstaticfile"   :   "spin2610/spin-261019-p11/spin-261019-ID26.11-5-zyn-applemint-HTML.html",
+
+    "trackmailopen"            :   "0",
+    "trackmailaudience"        :   "0",    
+
+    "target"                   :   "HTML",
+
+    "TwigTemplate"     :   "spin-zyn-2026-v1.twig",
+    "Source"           :   "spin-261019-ID26.11-5-zyn-applemint-HTML",
+    "isWebVer"         :   " ",
+    
+    "SECTION_2"        :   "############ CONTENIDOS #####################################",
+    "PageTitle"        :   "ZYN APPLEMINT",
+    "PREHEADER"        :   "",
+    "content_bgcolor"  :   "#FFFFFF",
+    "mobileclasses"    :   "#FFFFFF",
+
+    
+    "blocks" : 
+    [
+        {
+            "type"          :  "spin-center-img",
+            "bgcolor"       :  "#ffffff",
+            "img"           :  "header-zyn-oxxo.png",
+            "alt"           :  "ZYN",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "20",
+            "width_pc"      :  "100",
+            "this"          :  "HEADER ZYN - Spin Premia",
+            "version"       :  "spin-2026-v1.twig"
+       },
+        {
+            "type"          :  "spin-hero-img",
+            "bgcolor"       :  "#ffffff",
+            "img"           :  "2611-5-hero.gif",
+            "alt"           :  "Apple Mint, para tus mejores festivales. Dos sabores, una sola experiencia.",
+            "url"           :  "https://cloud.saborsinhumo.com/",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "91.4",
+            "this"          :  "Hero IMG",
+            "version"       :  "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-greeting",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "35px",
+            "height"        : "35px",
+            "align"         : "center",
+            "bgcolor"       : "#ffffff",
+            "color"         : "#01a9e0",
+            "mtop"          : "40",
+            "mbottom"       : "30",
+            "txt"           : "Hola,",
+            "HELP"          : [
+                                {"height"        : "checar eso UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"        : "ZYN azul: #01a9e0  #003b5e  Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"   : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},                                
+                                {"nope_txtClass" : "txt_26"}
+                            ],
+            "this"          : "HOLA",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-txt",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "300",
+            "fontsize"      : "20",
+            "height"        : "26",
+            "txtClass"      : "mbText18",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "msides_pc"     : "0",
+            "mcolor"        : "#ffffff",
+            "txt"           : "<span style=\"font-weight:700;\">La temporada de festivales ya se siente.</span><br><br>Se acercan los mejores momentos<br> llenos de música y diversión.<br> Descubre <span style=\"color:#35a011;font-weight:700;\">ZYN Apple Mint,</span><br> un sabor fresco que va con tu ritmo.",
+            "HELP"          : [
+                                {"Inline_IMG"   : "<img width=\"180\" height=\"35\" alt=\"ZYN\" src=\"#\" style=\"width:80px;height:30px;display:inline-block;border:0;outline:none;text-decoration:none;margin:0;vertical-align:-1px;\">"},
+                                {"TXT Formats"  : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},
+                                {"msides_pc"    : "UNITS: %  | FORMAT: use only a number"},
+                                {"width_pc"     : "UNITS: %  | FORMAT: use only a number"},
+                                {"height"       : "UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"       : "ZYN azul: #01a9e0  #003b5e Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"  : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim ad minima veniam,</span> quis nostrum <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"}
+                            ],
+            "this"          : "La temporada de festivales ya se siente",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-cta",
+            "txt"           : "Descubre más",
+            "url"           : "https://cloud.saborsinhumo.com/",
+            "font"          : "arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "16px",
+            "lineheight"    : "48px",
+            "color"         : "#FFFFFF",
+            "btncolor"      : "#01a9e0",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "40",
+            "mbottom"       : "40",
+            "width"         : "200px",
+            "HELP"          : [
+                                {"COLORS"       : "ZYN azul: #01a9e0 #003b5e  Turquesa: #00d1d2 | Slate: #34303d"}
+                              ],
+            "this"          : "CTA Descubre más | compatible con Outlook VML",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-center-img",
+            "bgcolor"       : "#ffffff",
+            "img"           : "2611-5-bloque1.png",
+            "alt"           : "Dale un lugar en primera fila a Apple Mint. Elige la intensidad que va contigo: 3 mg o 6 mg.",
+            "url"           : "#",
+            "alias"         : "",
+            "mtop"          : "0",
+            "mbottom"       : "0",
+            "width_pc"      : "91.4",
+            "this"          : "",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-txt",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "300",
+            "fontsize"      : "18",
+            "height"        : "22",
+            "txtClass"      : "mbText14",
+            "width_pc"      : "100",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "20",
+            "mbottom"       : "0",
+            "msides_pc"     : "0",
+            "mcolor"        : "#ffffff",
+            "txt"           : "*Disponible en tiendas <img width=\"55\" height=\"26\" alt=\"Oxxo\" src=\"oxxo_logo.png\" style=\"width:55px;height:26px;display:inline-block;padding-right:3px;border:0;outline:none;text-decoration:none;margin:0;vertical-align:-7px;\"> participantes.",
+
+            "HELP"          : [
+                                {"Inline_IMG"   : "<img width=\"55\" height=\"26\" alt=\"Oxxo\" src=\"oxxo_logo.png\" style=\"width:55px;height:26px;display:inline-block;padding-right:3px;border:0;outline:none;text-decoration:none;margin:0;vertical-align:-7px;\">"},
+                                {"TXT Formats"  : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},
+                                {"msides_pc"    : "UNITS: %  | FORMAT: use only a number"},
+                                {"width_pc"     : "UNITS: %  | FORMAT: use only a number"},
+                                {"height"       : "UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"       : "Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"  : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim ad minima veniam,</span> quis nostrum <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"}
+                            ],
+            "this"          : "Disponible en tiendas Oxxo participantes",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-txt",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "700",
+            "fontsize"      : "18",
+            "height"        : "22",
+            "txtClass"      : "mbText14",
+            "width_pc"      : "80",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "#ffffff",
+            "mtop"          : "60",
+            "mbottom"       : "0",
+            "msides_pc"     : "0",
+            "mcolor"        : "#ffffff",
+            "txt"           : "Este producto no es libre de riesgo, contiene nicotina la cual es adictiva. Solo para mayores de 18 años.",
+            "HELP"          : [
+                                {"Inline_IMG"   : "<img width=\"180\" height=\"35\" alt=\"ZYN\" src=\"#\" style=\"width:80px;height:30px;display:inline-block;border:0;outline:none;text-decoration:none;margin:0;vertical-align:-1px;\">"},
+                                {"TXT Formats"  : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},
+                                {"msides_pc"    : "UNITS: %  | FORMAT: use only a number"},
+                                {"width_pc"     : "UNITS: %  | FORMAT: use only a number"},
+                                {"height"       : "UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"       : "Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"  : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim ad minima veniam,</span> quis nostrum <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"}
+                            ],
+            "this"          : "Este producto no es libre de riesgo, contiene nicotina la cual es adictiva. Solo para mayores de 18 años",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-center-img",
+            "bgcolor"       : "#ffffff",
+            "img"           : "footer-zyn.png",
+            "alt"           : "ZYN",
+            "url"           : "#",
+            "alias"         : "",
+            "mtop"          : "35",
+            "mbottom"       : "50",
+            "width_pc"      : "35",
+            "this"          : "CENTERED LOGO ZYN | Footer | footer-zyn.png",
+            "version"       : "spin-2026-v1.twig"
+        },
+        {
+            "type"          : "spin-zyn-footer",
+            "img"           : "footer-zin-18.png",
+            "font"          : "Figtree, Gotham, arial, sans-serif",
+            "fontweight"    : "100",
+            "fontsize"      : "10px",
+            "fontstyle"     : "normal",
+            "height"        : "17px",
+            "color"         : "#34313d",
+            "bgcolor"       : "#ffffff",
+            "mbottom"       : "40px",
+            "txtClass"      : "mbFooterTxt",
+            "txt"           : "Consulta términos y condiciones en zyn.com. ZYN es un producto que contiene nicotina, la cual es altamente adictiva. Venta exclusiva para mayores de 18 años. El etiquetado y empaque puede variar en punto de venta. Vigencia del 15 de octubre al 4 de noviembre de 2026. Consulta productos participantes en tienda. No aplica con otras promociones. Aplican restricciones.",
+            "HELP"          : [
+                                {"txt_sample"    : "*Consulta términos y condiciones. Disponible únicamente en tiendas seleccionadas. IQOS es un dispositivo electrónico que no contiene tabaco, ni nicotina. Venta exclusiva para mayores de 18 años. El etiquetado y el paquete pueden variar en punto de venta.Vigencia del 13 agosto al 5 octubre de 2026. Consulta productos participantes en tienda, No aplica con otras promociones. Aplican restricciones.<br /><br />Esta dinámica es organizada y administrada únicamente por Philip Morris México, S.A. de C.V. (\"PMM\"). Cadena comercial OXXO, S.A. de C.V. (\"OXXO\") no es responsable de la organización, administración, ejecución, mécanica, selección de ganadores ni entrega del premio. Para cualquier duda o aclaración relacionada con la promoción, favor de contactar directamente a PMM."},
+                                {"height"        : "UNITS: px | FORMAT: use only a number"},
+                                {"COLORS"        : "Turquesa: #00d1d2 | Slate: #34303d"},
+                                {"TXT Formats"   : "<span style=\"color:#00d1d2;font-weight:700;\">Ut enim </span>ad veniam, <a href=\"http://somelink\" style=\"text-decoration:underline;\" target=\"_blank\">LINK</a> exercitationem<span style=\"font-size:12px;\"><sup>(1)</sup></span> ullam corporis, consequatur?"},
+                                {"nope_width_pc" : "100"},
+                                {"nope_align"    : "center"},
+                                {"nope_mtop"     : "40"},
+                                {"nope_msides"   : "0"},
+                                {"nope_mcolor"   : "transparent"}
+                            ],
+            "this"          : "FOOTER",
+            "version"       : "spin-2026-v1.twig"
+        }
+    ],
+    
+    "END"            :   "#######################"
+
+}

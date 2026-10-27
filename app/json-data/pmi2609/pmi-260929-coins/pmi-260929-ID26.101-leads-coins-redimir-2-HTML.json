@@ -1,0 +1,200 @@
+{
+    "DESCRIPTION"      :   "########### PMI  ############",
+   
+    "config_template" :
+    {
+        "test-url"       :
+        {
+            "url_local"   : "file:///C:/www2/mailtool/email/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html",
+            "url_paginum" : "https://paginum.com/email/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html"
+        },
+
+        "Subject"          :   "",
+        "Preheader"        :   "",
+
+        "PATH"             :   "",
+        "Name-CustomerKey" :   
+        [
+            { 
+                "name"        : "",
+                "CustomerKey" : ""
+            }
+        ],
+
+        "test-url_legacy"         :   
+        [
+            { "urlD" : "https://paginum.com/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML" } ,
+            { "urlS" : "https://paginum.com/email/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html"  },
+            { "urlS" : "http://mailtool.lan:8888/email/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html"},
+            { "urlS" : "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html" },
+            { "THIS" :  "urlD: Dynamic content / urlS: Static content" },
+            {
+                "MAMP-PRO-ON-MAC"  :   "http://mailtool.lan:8888/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML",
+                "MAMP-PRO-ON-PC"   :        "http://mailtool.lan/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML",
+                "MAMP-ON-MAC"      :   "http://localhost:8888/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML",
+                "openHTML-MAC"     :   "file:///Users/armandoromero/Documents/devF1/mailtool.lan/email/pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html"
+            }
+        ]
+    },
+
+    "SECTION_1"        :   "########### CONFIGURACION DE PLANTILLA ####################", 
+    "BaseURLassets"    :   "",
+    "BaseURLimg"       :   "",
+    
+    "HTMLstaticfile"   :   "pmi2609/pmi-260929-coins/pmi-260929-ID26.101-leads-coins-redimir-2-HTML.html",
+
+    "trackmailopen"            :   "0",
+    "trackmailaudience"        :   "0",    
+
+    "target"                   :   "HTML",
+
+    "TwigTemplate"     :   "iqos-2024-v1.twig",
+    "Source"           :   "pmi-260929-ID26.101-leads-coins-redimir-2-HTML",
+    "isWebVer"         :   " ",
+    
+    "SECTION_2"        :   "############ CONTENIDOS #####################################",
+    "PageTitle"        :   "ID26.101 LEADS DCE LOCAL COINS REDIMIR 2",
+    "PREHEADER"        :   "",
+    "content_bgcolor"  :   "#FFFFFF",
+    
+    "blocks" : 
+    [
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "header-iqos-fc.png",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG header IQOS New Brand World",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.101-1.gif",
+            "alt"           :  "",
+            "url"           :  "https://www.iqos.com/mx/es/home.html",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.101-1",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          : "iq24-greeting",
+            "fontweight"    : "700",
+            "color"         : "#34303d",
+            "bgcolor"       : "transparent",
+            "mtop"          : "40",
+            "mbottom"       : "20",
+            "txt"           : "Hola, %%first_name%%",
+            "this"          : "Hola [nombre] | Turquesa: #00d1d2 | Slate: #34303d"
+        },
+        {
+            "type"          : "iq24-p",
+            "font"          : "Cabin",
+            "fontweight"    : "300",
+            "fontsize"      : "20",
+            "height"        : "24",
+            "txtclass"      : "txt_20",
+            "width_pc"      : "80",
+            "align"         : "center",
+            "color"         : "#34303d",
+            "bgcolor"       : "transparent",
+            "mtop"          : "40",
+            "mbottom"       : "40",
+            "msides"        : "0",
+            "mcolor"        : "transparent",
+            "txt"           : "Lleva tu moneda a tu <span style=\"color:#00d1d2;font-weight:700;\">Tienda IQOS</span> más cercana <br>y recibe un descuento especial en tu<br>dispositivo <span style=\"color:#00d1d2;font-weight:700;\">IQOS ILUMA i.</span>",
+            "this"          : "TXT | Turquesa: #00d1d2 | Slate: #34303d "
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.101-2.jpg",
+            "alt"           :  "",
+            "url"           :  "https://conoce-iqos.com/wp-content/localizador-tiendas.html",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.101-2",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "26.101-3.jpg",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG 26.101-3",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-center-img",
+            "bgcolor"       :  "transparent",
+            "img"           :  "te-atreves.jpg",
+            "alt"           :  "",
+            "url"           :  "#",
+            "alias"         :  "",
+            "mtop"          :  "0",
+            "mbottom"       :  "0",
+            "width_pc"      :  "100",
+            "this"          :  "IMG te-atreves",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"        : "iq24-spacer",
+            "height"      : "10",
+            "bgcolor"     : "transparent"
+        },
+
+
+        {   "SECCION"       :  " FOOTER IQOS 2026" },
+        {                        
+            "type"          :  "iq24-footer-iqos-nofc-disclaimers",
+            "txt"           :  "*20% de descuento en la compra de tu primer dispositivo IQOS. Vigencia del 12 de octubre al 31 de diciembre de 2026. Consulta términos y condiciones en <a href=\"https://www.iqos.com/mx/es/home.html\" style=\"text-decoration:underline;\" target=\"_blank\">iqos.com</a>",
+            "darkmode_img"  :  "0",
+            "color"         :  "#34303d",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "this_TXT"      :  "{LEGALES DE ESTA PIEZA}",
+            "DTI":
+            {
+                "showIluma"  :  "0",
+                "txtIluma"   :  "IQOS ILUMA<sup>&trade;</sup> está diseñado para usarse únicamente con unidades de tabaco<br>SMARTCORE STICKS<sup>&trade;</sup>.<br><br>No utilice IQOS ILUMA<sup>&trade;</sup> y unidades de tabaco SMARTCORE STICKS<sup>&trade;</sup> con generaciones anteriores de IQOS<sup>&trade;</sup>, ya que esto puede causar daños a su dispositivo.<br><br>Más información en <a href=\"https://www.iqos.com/\" style=\"text-decoration:underline;\" target=\"_blank\">www.iqos.com</a>.",
+                "txtRisk"    :  "Este producto no es libre de riesgo, contiene nicotina<br> la cual es adictiva. Solo para adultos.",
+                "txtInfo"    :  "Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
+                "txtPrivacy" :  "Consulta nuestro aviso de privacidad con base en el cual son tratados tus datos personales <a href=\"https://www.pmiprivacy.com/es-la/consumer\" alias=\"footer_pmi_privacy\" style=\"text-decoration:underline;\" target=\"_blank\">aquí</a>.<br><br>Consulta la página de <a href=\"https://www.iqos.com/mx/es/Noticias/informacion-importante.html\" style=\"text-decoration:underline;\" target=\"_blank\">información importante</a> para obtener más detalles.",
+                "THIS"       :  "{LEGALES [ILUMA], Duty To Inform}"
+            },
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-footer-iqos-fc-links",
+            "darkmode_img"  :  "0",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "version"       :  "iqos-2024-v1.twig"
+        },
+        {
+            "type"          :  "iq24-footer-iqos-fc-address",
+            "color"         :  "#34303d",
+            "bgcolor"       :  "transparent",
+            "linkcolor"     :  "#34303d",
+            "version"       :  "iqos-2024-v1.twig"
+        }
+    ],
+    
+    "END"            :   "#######################"
+
+}
