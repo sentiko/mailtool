@@ -1,10 +1,10 @@
 .DS_Store
 app/cli/z-ignore
-ztest/
-zIgnore/
-vendor/
 email/
-zREADME/LEEME.txt
-zREADME/_SETTINGS SALESFORCE FORMS IN EMAIL.txt
+vendor/
+zIgnore/
+ztest/
 zREADME/_ACCESO salesforce.txt
+zREADME/_SETTINGS SALESFORCE FORMS IN EMAIL.txt
+zREADME/LEEME.txt
 MAILTOOL.code-workspace
