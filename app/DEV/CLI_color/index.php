@@ -48,20 +48,21 @@ function consoleMessage($str, $type = 'i') {
 }
 
 
-// $ echo -e "\e[31m Red Text\e[0m"
-// $ echo -e "\e[42mGreen Background\e[0m"
-// $ echo -e "\e[1;34mLight Blue Text\e[0m"
+echo "\e[31m Red Text \e[0m" . PHP_EOL ;
+echo "\e[42m Green Background \e[0m" . PHP_EOL ;
+echo "\e[1;34m Light Blue Text \e[0m" . PHP_EOL ;
 
-// \e[1; 33; 4; 44   m
-//       t   u  bg    
-// $ echo -e "\e[1;33;4;44mYellow Underlined Text on Blue Background\e[0m"
+// // \e[1; 33; 4; 44   m
+// //       t   u  bg    
+// echo -e "\e[1;33;4;44m Yellow Underlined Text on Blue Background \e[0m"
+echo "\e[1;33;4;44m Yellow Underlined Text on Blue Background \e[0m". PHP_EOL ;
 
 
 // Sample mock data for testing
-$errorMessage = "This is an error message";
-$successMessage = "This is a success message";
-$warningMessage = "This is a warning message";
-$infoMessage = "This is an info message";
+$errorMessage = "[ \u{2718}  This is an error message]";
+$successMessage = "[ \u{2714}  This is a success message]";
+$warningMessage = "[ \u{26A0}  This is a warning message]";
+$infoMessage = "[ \u{1F6C8}  This is an info message]";
 $xMessage = "This is an X message";
 $yMessage = "This is an Y message";
 $y1Message = "This is an Y1 message";
@@ -70,10 +71,11 @@ $zMessage = "This is an Z message";
 // Usage examples
 consoleMessage($errorMessage, 'e');
 consoleMessage($warningMessage, 'w');
+consoleMessage($successMessage, 's');
 consoleMessage($infoMessage, 'i');
 consoleMessage($xMessage, 'x');
-consoleMessage($successMessage, 's');
 consoleMessage($y1Message, 'y1');
 consoleMessage($zMessage, 'z');
+echo "Normal text" . PHP_EOL;
 
 

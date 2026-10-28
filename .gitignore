@@ -1,10 +1,5 @@
 .DS_Store
+.DOCS/_ignore
 app/cli/z-ignore
 email/
 vendor/
-zIgnore/
-ztest/
-zREADME/_ACCESO salesforce.txt
-zREADME/_SETTINGS SALESFORCE FORMS IN EMAIL.txt
-zREADME/LEEME.txt
-MAILTOOL.code-workspace

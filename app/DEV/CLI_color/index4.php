@@ -33,10 +33,19 @@
  *  https://www.compart.com/en/unicode/U+2612  &#9746;  Ballot Box with X         “☒” (U+2612)
  *  https://www.compart.com/en/unicode/U+26A0  &#9888;  Warning Sign              “⚠” (U+26A0)
  *  https://www.compart.com/en/unicode/U+26C6  &#9926;  Rain                      “⛆” (U+26C6)
+ *
+ *  https://www.compart.com/en/unicode/block/U+1F680
+ *  Unicode Block “Transport and Map Symbols”
+ *                                          HTML Entity  Name                        Unicode Character 
+ *  https://www.compart.com/en/unicode/U+1F6C8 &#128712; Circled Information Source     “🛈” (U+1F6C8)
 */
 
 
 echo "\u{2611}";  // ☑ Ballot Box with Check
+echo PHP_EOL;
+
+
+echo "\u{1F6C8} Informacion";  // 🛈 Circled Information Source
 echo PHP_EOL;
 
 
