@@ -9,19 +9,19 @@ Esta aplicación permite crear correo HTML a partir de archivos TWIG que contien
 1) En la carpeta de instalación:
 
 ```bash
-$git clone git@github.com:sentiko/mailtool.git
+git clone git@github.com:sentiko/mailtool.git
 ```
 
 2) Instalar las dependencias en la carpeta "vendor":
 
 ```bash
-$ composer install
+composer install
 ```
 
 3) Crea un nuevo archivo autoload
 
 ```bash
-$ composer dump-autoload -o
+composer dump-autoload -o
 ```
 
 
